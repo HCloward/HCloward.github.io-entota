@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entota Hugo POC</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-06-02T22:01:15 EDT">
+<title>January 2018 :: Entota Hugo POC</title>
+<link rel="shortcut icon" href="/entotahugo/images/favicon.png" type="image/x-icon" />
+<link href="/entotahugo/css/nucleus.css" rel="stylesheet">
+<link href="/entotahugo/css/font-awesome.min.css" rel="stylesheet">
+<link href="/entotahugo/css/hybrid.css" rel="stylesheet">
+<link href="/entotahugo/css/featherlight.min.css" rel="stylesheet">
+<link href="/entotahugo/css/auto-complete.css" rel="stylesheet">
+<link href="/entotahugo/theme-original/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/entotahugo/css/bootstrap.min.css">
+<script src="/entotahugo/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
+<meta name="description" content="">
+
+
+    
+  </head>
+  <body data-url="/entotahugo/release-notes/entotareleases0118/">
+    
+      <div id="headermain"></div>
+<nav id="sidebar" class="showVisitedLinks">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
+  
+    <a class="baselink" href="https://heathercl.gitlab.io/entotahugo/">Entota Hugo POC</a>
+  
+
+
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/entotahugo/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/entotahugo/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/heathercl.gitlab.io\/entotahugo\/";
+        
+		</script>
+		<script type="text/javascript" src="/entotahugo/js/search.js"></script>
+  </div>
+
+      <ul class="topics">
+            <li data-nav-id="/entotahugo/" class="dd-item">
+            <a href="/entotahugo/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+    <li data-nav-id="/entotahugo/administration/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/administration/">Administration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/administration/search_admin/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/search_admin/">
+            Search Admin
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/add_a_user_to_entota/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/add_a_user_to_entota/">
+            Add a User to Entota
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/edit_a_user_account/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/edit_a_user_account/">
+            Edit a User Account
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/update_my_profile/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/update_my_profile/">
+            Update My Profile
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/entota_websocket_firewall_requirements/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/entota_websocket_firewall_requirements/">
+            Entota WebSocket Firewall Requirements
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/dashboards/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/dashboards/">Dashboards</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/dashboards/migration_dashboard/" class="dd-item">
+        <div>
+          <a href="/entotahugo/dashboards/migration_dashboard/">
+            Migration Dashboard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/dashboards/director_dashboard/" class="dd-item">
+        <div>
+          <a href="/entotahugo/dashboards/director_dashboard/">
+            Director Dashboard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/dashboards/director_dashboard_deep_guidancd/" class="dd-item">
+        <div>
+          <a href="/entotahugo/dashboards/director_dashboard_deep_guidancd/">
+            Director Dashboard Deep Guidance
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/enhanced-search/" class="dd-item
+        ">
+      <div>
+      <a href="/entotahugo/enhanced-search/">Enhanced Search</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/entotahugo/strategy/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/strategy/">Strategy</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/strategy/vision_mission_goals_and_initiatives/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/vision_mission_goals_and_initiatives/">
+            Vision, Mission, Goals, and Initiatives
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_a_vision/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_a_vision/">
+            Add a Vision
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_a_mission/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_a_mission/">
+            Add a Mission
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_goals/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_goals/">
+            Add Goals
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_initiatives/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_initiatives/">
+            Add Initiatives
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/terms-policies-and-rules/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/terms-policies-and-rules/">Terms, Policies, and Rules</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/terms-policies-and-rules/set_up_terms/" class="dd-item">
+        <div>
+          <a href="/entotahugo/terms-policies-and-rules/set_up_terms/">
+            Set Up Terms
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/terms-policies-and-rules/set_up_policies/" class="dd-item">
+        <div>
+          <a href="/entotahugo/terms-policies-and-rules/set_up_policies/">
+            Set Up Policies
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/terms-policies-and-rules/set_up_rules/" class="dd-item">
+        <div>
+          <a href="/entotahugo/terms-policies-and-rules/set_up_rules/">
+            Set Up Rules
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/data-catalog/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/data-catalog/">Data Catalog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/data-catalog/set_up_a_system/" class="dd-item">
+        <div>
+          <a href="/entotahugo/data-catalog/set_up_a_system/">
+            Set Up a System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/data-catalog/set_up_a_data_set/" class="dd-item">
+        <div>
+          <a href="/entotahugo/data-catalog/set_up_a_data_set/">
+            Set Up a Data Set
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/data-catalog/import_fields_to_a_system/" class="dd-item">
+        <div>
+          <a href="/entotahugo/data-catalog/import_fields_to_a_system/">
+            Import Fields to a System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/sponsors/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/sponsors/">Sponsors</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/sponsors/add_a_sponsor_to_an_asset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/sponsors/add_a_sponsor_to_an_asset/">
+            Add a Sponsor to an Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/sponsors/sponsor_an_asset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/sponsors/sponsor_an_asset/">
+            Sponsor an Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/sponsors/contest_an_asset_non-sponsors/" class="dd-item">
+        <div>
+          <a href="/entotahugo/sponsors/contest_an_asset_non-sponsors/">
+            Contest an Asset (Non-sponsors)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/guidance/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/guidance/">Guidance test</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/guidance/guidance/" class="dd-item">
+        <div>
+          <a href="/entotahugo/guidance/guidance/">
+            Guidance
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/relationships/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/relationships/">Relationships</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/relationships/addarelationshiptoanonstrategyasset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/addarelationshiptoanonstrategyasset/">
+            Add a Relationship to a Non-Strategy Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/relationships/addarelationshiptoastrategyasset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/addarelationshiptoastrategyasset/">
+            Add a Relationship to a Strategy Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/relationships/addatermtotermrelationship/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/addatermtotermrelationship/">
+            Add a Term-to-Term Relationship
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/relationships/deep_guidance_inferred_relationships/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/deep_guidance_inferred_relationships/">
+            Deep Guidance™ Inferred Relationships
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/asset-options/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/asset-options/">Asset Options</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/asset-options/share_urls_for_assets/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/share_urls_for_assets/">
+            Share URLs for Assets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/view_change_history_for_assets/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/view_change_history_for_assets/">
+            View Change History for Assets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/comment_on_an_asset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/comment_on_an_asset/">
+            Comment on an Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/add_supporting_doc/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/add_supporting_doc/">
+            Add Supporting Documentation to Assets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/enforcementprofiles/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/enforcementprofiles/">
+            Enforcement Profiles
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/notifications/" class="dd-item
+        ">
+      <div>
+      <a href="/entotahugo/notifications/">Notifications</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/entotahugo/release-notes/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/entotahugo/release-notes/">Entota Release Notes</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0418/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0418/">
+            April 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0818/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0818/">
+            August 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1217/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1217/">
+            December 2017
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1218/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1218/">
+            December 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0218/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0218/">
+            February 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0118/" class="dd-item active">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0118/">
+            January 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0119/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0119/">
+            January 2019
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0718/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0718/">
+            July 2019
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0618/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0618/">
+            June 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0318/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0318/">
+            March 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0518/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0518/">
+            May 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1118/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1118/">
+            November 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1018/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1018/">
+            October 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0918/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0918/">
+            September 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/use-help/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/use-help/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/use-help/basic_navigation/" class="dd-item">
+        <div>
+          <a href="/entotahugo/use-help/basic_navigation/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/use-help/online_help_search_tips/" class="dd-item">
+        <div>
+          <a href="/entotahugo/use-help/online_help_search_tips/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/use-help/print_feedback_version/" class="dd-item">
+        <div>
+          <a href="/entotahugo/use-help/print_feedback_version/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/getting-started/" class="dd-item
+        ">
+      <div>
+      <a href="/entotahugo/getting-started/">Getting Started with Entota</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+        <section id="shortcuts">
+                <li class="" role=""><h3>More</h3><a href="/entotahugo/release-notes" target="_blank" rel="noopener"><i class='fa fa-umbrella'></i> <label>Release Notes</label></a></li>
+                <li class="" role=""><a href="/entotahugo/use-help" target="_blank" rel="noopener"><i class='fa fa-rocket'></i> <label>How to Use Help</label></a></li>
+                <li class="" role=""><a href="Getting%20Started%20with%20Entota" target="_blank" rel="noopener"><i class='fa fa-bookmark'></i> <label>Getting Started with Entota</label></a></li>
+                <li class="" role=""><a href="/entotahugo/credits" target="_blank" rel="noopener"><i class='fa fa-bullhorn'></i> <label>Credits</label></a></li>
+        </section>
+            <a id="clear-history" class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
+
+    <hr />
+    <li></li>
+    
+    </ul>
+
+ <section id="footer">
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    
+      
+      
+      
+    <div id="top-github-link">
+      <a class="github-link" href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/Release%20Notes/EntotaReleases0118.md" target="blank">
+        <i class="fa fa-code-fork"></i>
+        Improve this page
+      </a>
+    </div><div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+        <span class="links">
+        
+
+
+
+
+
+
+
+ <a href='/entotahugo/'>Welcome to Entota Help</a> > <a href='/entotahugo/release-notes/'>Entota Release Notes</a> > January 2018
+
+ 
+
+ 
+
+   
+        </span>
+    </div>
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#january-31-2018">January 31, 2018</a>
+      <ul>
+        <li><a href="#bug-fixes">Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-30-2018">January 30, 2018</a>
+      <ul>
+        <li><a href="#bug-fix">Bug Fix</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-26-2018">January 26, 2018</a>
+      <ul>
+        <li><a href="#enhancements">Enhancements</a></li>
+        <li><a href="#bug-fixes-1">Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-25-2018">January 25, 2018</a>
+      <ul>
+        <li><a href="#enhancements-1">Enhancements</a></li>
+        <li><a href="#bug-fixes-2">Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-22-2018">January 22, 2018</a>
+      <ul>
+        <li><a href="#bug-fix-1">Bug Fix</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-19-2018">January 19, 2018</a>
+      <ul>
+        <li><a href="#bug-fixes-3">Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-18-2018">January 18, 2018</a>
+      <ul>
+        <li><a href="#bug-fixes-4">Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-17-2018">January 17, 2018</a>
+      <ul>
+        <li><a href="#bug-fixes-5">Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-16-2018">January 16, 2018</a>
+      <ul>
+        <li><a href="#bug-fixes-6">Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-15-2018">January 15, 2018</a>
+      <ul>
+        <li><a href="#enhancements-2">Enhancements</a></li>
+        <li><a href="#bug-fixes-7">Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-12-2018">January 12, 2018</a>
+      <ul>
+        <li><a href="#bug-fixes-8">Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-11-2018">January 11, 2018</a>
+      <ul>
+        <li><a href="#bug-fixes-9">Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-10-2018">January 10, 2018</a>
+      <ul>
+        <li><a href="#bug-fix-2">Bug Fix</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-9-2018">January 9, 2018</a>
+      <ul>
+        <li><a href="#bug-fix-3">Bug Fix</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-8-2018">January 8, 2018</a>
+      <ul>
+        <li><a href="#bug-fix-4">Bug Fix</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-5-2018">January 5, 2018</a>
+      <ul>
+        <li><a href="#bug-fixes-10">Bug Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-3-2018">January 3, 2018</a>
+      <ul>
+        <li><a href="#bug-fixes-11">Bug Fixes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </div>
+    
+
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>January 2018</h1>
+  
+
+
+
+    
+    
+    
+    <h1 id="january-2018">January 2018</h1>
+<h2 id="january-31-2018">January 31, 2018</h2>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>[IGC-887] – Fixed an issue where duplicating a browser tab caused a browser error that prevented a Term page from opening in the new tab by limiting the number of suggested terms to 20 and existing terms to 1000.</li>
+<li>[IGC-926] – Fixed an issue were when a sponsor contested an asset the color on the “Contested” indicator did not update to gray in the comments panel.</li>
+<li>[IGC-1021] – Fixed an issue where the “Sign Out” option was not left-aligned in the user menu options.</li>
+<li>[IGC-1031] – Fixed an issue in the Process Designer where Role Dependency and Conflicting Role changes were not displayed correctly in the change history.</li>
+<li>[IGC-1043] – Fixed an issue were on the search results page the selection indicator (triangle), asset name and border (on select) did not correspond to the asset color schema used by the rest of the site.</li>
+</ul>
+<h2 id="january-30-2018">January 30, 2018</h2>
+<h3 id="bug-fix">Bug Fix</h3>
+<p>[IGC-539] – Fixed an issue where on login Entota™ did not inform users that access to the Glossary component is required. Refer to Add a User to Entota™ to learn more.</p>
+<h2 id="january-26-2018">January 26, 2018</h2>
+<h3 id="enhancements">Enhancements</h3>
+<p>Notifications have been enhanced to add new options to delete, undo a deletion, and mark notifications as read and unread. The options can be accessed from a drop-down menu in the Notification pane. Refer to Notifications in Help to learn more.</p>
+<h3 id="bug-fixes-1">Bug Fixes</h3>
+<p>[IGC-985] – Fixed an issue where the “Changed on” date was being populated in Change History when a new record was created.</p>
+<h2 id="january-25-2018">January 25, 2018</h2>
+<h3 id="enhancements-1">Enhancements</h3>
+<p>The search results page has been enhanced as follows:</p>
+<ul>
+<li>A message is displayed to indicate when more than 100 results are returned by a search.</li>
+<li>Allows pagination for search results that return over 100 results.</li>
+<li>Search results row selection and detail link have been enhanced to provide a better user experience</li>
+</ul>
+<h3 id="bug-fixes-2">Bug Fixes</h3>
+<p>[IGC-848] – Fixed an issue that caused the user to have to select the field twice to enter the Implication while adding a new rule.</p>
+<h2 id="january-22-2018">January 22, 2018</h2>
+<h3 id="bug-fix-1">Bug Fix</h3>
+<p>[IGC-826] – Fixed an issue where the underline on tabs for elements on the landing page and the supporting documentation/comments tabs for assets was off-center.</p>
+<h2 id="january-19-2018">January 19, 2018</h2>
+<h3 id="bug-fixes-3">Bug Fixes</h3>
+<ul>
+<li>[IGC-998] – Fixed an issue that prevented users from entering a term that contained commas as a synonym to a term.</li>
+<li>[IGC-995] – Fixed an issue where the color of the text for Initiatives was hard to read in the search results.</li>
+<li>[IGC-891] – Fixed an issue where when in edit mode and clicking to navigate between the Goals/Initiative tabs a continuous loop where the navigation cycled was beyond the number of clicks occurred.</li>
+<li>[IGC-910] – Fixed an issue to update Dataset to Data Set throughout the UI.</li>
+<li>[IGC-930] – Fixed an issue were users could click the Add icon to add a comment before entering information into the comment field.</li>
+</ul>
+<h2 id="january-18-2018">January 18, 2018</h2>
+<h3 id="bug-fixes-4">Bug Fixes</h3>
+<ul>
+<li>[IGC-757] – Fixed an issue where Security Groups were displayed in the UI in Admin. Security Groups have not been implemented.</li>
+<li>[IGC-911] – Fixed an issue where Term was referenced as Glossary Term in the Global Add drop-down, which was not consistent with the rest of Entota™.</li>
+<li>[IGC-924] – Fixed an issue where the red dot indicating new notifications would re-display after a page refresh.</li>
+</ul>
+<h2 id="january-17-2018">January 17, 2018</h2>
+<h3 id="bug-fixes-5">Bug Fixes</h3>
+<ul>
+<li>[IGC-854] – Fixed an issue to use the color-coding scheme for asset types throughout the UI. The color scheme is used consistent for the Global Add option, search results, and Jump to… options.</li>
+<li>[IGC-736] – Fixed an issue where you could filter the list of users in Admin on Enabled when the Enabled option had previously been removed from the configurations for a user.</li>
+<li>[IGC-776] – Fixed an issue where the Additional Endorsers button was out of screen with a long list of endorsers.</li>
+<li>[IGC-956] – Fixed an issue where when you edit an initiative, and then click Save, if you edit again without refreshing the page, the save button appears, but is disabled and the new changes can not be saved.</li>
+<li>[IGC-1000] – Fixed an issue where select and preview were not working consistently in the search results and clicking an asset would sometimes launches the full detail page for the selected asset.</li>
+</ul>
+<h2 id="january-16-2018">January 16, 2018</h2>
+<h3 id="bug-fixes-6">Bug Fixes</h3>
+<ul>
+<li>[IGC-771] – Fixed an issue where when searching for sponsors to add to an asset or for related assets it was not obvious how the search results list was being filtered. The search results list is now filtered to let the user understand the need to scroll to find a specific result.</li>
+<li>[IGC-908] – Fixed an issue where the Sponsor user avatar colors did not match the user avatar colors for Notifications.</li>
+</ul>
+<h2 id="january-15-2018">January 15, 2018</h2>
+<h3 id="enhancements-2">Enhancements</h3>
+<p>[IGC-677] – The search results page has been improved. Users can now access the full detail page from the search results. The user interface has been updated to make identifying the asset type easier. Refer to the Search topic in Help to learn more.</p>
+<h3 id="bug-fixes-7">Bug Fixes</h3>
+<ul>
+<li>[IGC-981] – Fixed an issue where the page did not display correctly when switching program context on dashboard, and then navigating to goals from the dashboard.</li>
+<li>[IGC-945] – Fixed an issue where notifications were being kept indefinitely by setting the notifications retention time to 6 months.</li>
+<li>[IGC-582] – Fixed an issue where &ldquo;My Profile&rdquo; only launched when clicking on text, but not when to right of &ldquo;My Profile text&rdquo;</li>
+<li>[IGC-838] – Fixed an issue where navigating between tabs on the Goal/Initiative pages was not working.</li>
+</ul>
+<h2 id="january-12-2018">January 12, 2018</h2>
+<h3 id="bug-fixes-8">Bug Fixes</h3>
+<ul>
+<li>[IGC-906] – Changed font color for text in UI. (Black Text changed to #58595B).</li>
+<li>[IGC-746] – Fixed issue where long summary names hid the close icon on the close history modal.</li>
+<li>[IGC-811] – Fixed issue where for Tasks the delete/cut/removal option in the Visual Designer caused a hidden error that made the page unresponsive.</li>
+<li>[IGC-827] – Fixed issue where entering Term Relationship selection did not filter and causes a Console error.</li>
+</ul>
+<h2 id="january-11-2018">January 11, 2018</h2>
+<h3 id="bug-fixes-9">Bug Fixes</h3>
+<ul>
+<li>[IGC-987] – Fixed a bug that browser does not have the latest htmlTemplate JS due to caching.</li>
+<li>[IGC-772] – Fixed issue in Side Panel to correct problem with display of long asset or element names.</li>
+<li>[IGC-974] – Fixed issue with static suggestions not updating when switching between tabs in the navigation panel.</li>
+</ul>
+<h2 id="january-10-2018">January 10, 2018</h2>
+<h3 id="bug-fix-2">Bug Fix</h3>
+<p>[IGC-962] – Fixed a bug that browser does not have the latest HTML templates due to caching.</p>
+<h2 id="january-9-2018">January 9, 2018</h2>
+<h3 id="bug-fix-3">Bug Fix</h3>
+<p>[IGC-903] – Fixed an issue where it was difficult to tell whether a goal or initiative was a program or company level asset by adding a heading to the side panel.</p>
+<h2 id="january-8-2018">January 8, 2018</h2>
+<h3 id="bug-fix-4">Bug Fix</h3>
+<ul>
+<li>[IGC-845] – Fixed padding in UI around Data Set Classification and Attribute sections.</li>
+<li>[IGC-907] – Fixed UI issues with style of Contact Card.</li>
+</ul>
+<h2 id="january-5-2018">January 5, 2018</h2>
+<h3 id="bug-fixes-10">Bug Fixes</h3>
+<ul>
+<li>[IGC-683] – Replace all references to DataSource in the application with its proper name System.</li>
+<li>[IGC-768] – Fixed issue where Policy Text Editor add Link which opens the &ldquo;Enter URL&rdquo; Editor does not render buttons correctly.</li>
+<li>[IGC-840] – Fixed issue where Sorting in the List APIs for Assets Shown in the Relationship Pick Lists Is Case Sensitive.</li>
+<li>[IGC-970] – Fixed issue where static suggestions not updating after editing related items on asset detail pages.</li>
+<li>[IGC-971] – Increased Rule Statement text area for longer statements.</li>
+<li>[IGC-972] – Updated copyright date to 2018 in the footer.</li>
+<li>[IGC-975] – Fixed issue with Invalid JSON error messages from the govern service.</li>
+</ul>
+<h2 id="january-3-2018">January 3, 2018</h2>
+<h3 id="bug-fixes-11">Bug Fixes</h3>
+<ul>
+<li>[IGC-831] – Fixed issue where relationship changes to Asset records not displayed in Change History.</li>
+<li>[IGC-864] – Fixed issue where Sponsor Name Does Not Clear Out After Adding Sponsor To Asset.</li>
+<li>[IGC-901] – Update Relation API in UI to allow relationship changes to Asset records to be displayed in Change History.</li>
+<li>[IGC-944] – Updated History list to return only updated fields.</li>
+<li>[IGC-538] – Fixed issue with Program ID is missing on initial login.</li>
+<li>[IGC-37] – Fixed UI issue in where in Preview: Missing color flag and title is not color coded.</li>
+<li>[IGC-863] – Fixed issue where deleting records in Strategy doesn&rsquo;t properly redirect.</li>
+<li>[IGC-886] – Fixed issue where logging Out of Entota™ In One Tab While Two Tabs Are Open Allow The Continued Use of Entota™.</li>
+<li>[IGC-912] – Fixed issue where copy URL for strategy elements generating incorrect url string.</li>
+<li>[IGC-918] – Fixed issue where Comment is not shown on Notification and &lsquo;View Comment&rsquo; link does not work.</li>
+<li>[IGC-928] – Fixed issue where Support email address needs to be removed from all emails generated by Entota™. All references to support needs are now directed to <a href="https://support.boaweb.com">https://support.boaweb.com</a>.</li>
+<li>[IGC-949] – 20171221 Deployment Bugs:
+<ul>
+<li>Fixed issue where user could add duplicate synonyms.</li>
+<li>Fixed issue where too many watchers being created in a short period caused an error.</li>
+<li>Fixed issue where adding related assets also throws errors after pressing the &ldquo;Done&rdquo; button.</li>
+<li>Fixed issue where after editing related assets (For example, removing all of them), hovering over the table header for the changed relationship type throws a console error when attempting to discern the url to link to the assets that would be listed under it.</li>
+</ul>
+</li>
+</ul>
+
+
+    
+    
+          <footer class=" footline" >
+	
+</footer>
+  </div>
+</div>
+
+<div id="navigation">
+<a class="nav nav-prev" href="/entotahugo/release-notes/entotareleases0218/" title="February 2018"> <i class="fa fa-chevron-left"></i><label>February 2018</label></a>
+    <a class="nav nav-next" href="/entotahugo/release-notes/entotareleases0119/" title="January 2019" style="margin-right: 0px;"><label>January 2019</label><i class="fa fa-chevron-right"></i></a></div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+<script src="/entotahugo/js/clipboard.min.js"></script>
+<script src="/entotahugo/js/featherlight.min.js"></script>
+<script src="/entotahugo/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/entotahugo/js/modernizr.custom.71422.js"></script>
+<script src="/entotahugo/js/docdock.js"></script>
+<script src="/entotahugo/theme-original/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

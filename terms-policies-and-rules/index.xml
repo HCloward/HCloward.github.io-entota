@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terms, Policies, and Rules on Entota Hugo POC</title>
+    <link>https://heathercl.gitlab.io/entotahugo/terms-policies-and-rules/</link>
+    <description>Recent content in Terms, Policies, and Rules on Entota Hugo POC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://heathercl.gitlab.io/entotahugo/terms-policies-and-rules/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Set Up Terms</title>
+      <link>https://heathercl.gitlab.io/entotahugo/terms-policies-and-rules/set_up_terms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://heathercl.gitlab.io/entotahugo/terms-policies-and-rules/set_up_terms/</guid>
+      <description>You can define terms to improve business understanding and use of data.
+As you are setting up a term, you can click the Guidance () icon to open the Guidance panel to view assistance. Refer to Guidance for more information.
+NOTE: If a user does not have permission to add an asset, it displays dimmed with a lock icon on the Quick Add menu.
+To add a term:
+  Click the plus sign (Add) icon on the Home page.</description>
+    </item>
+    
+    <item>
+      <title>Set Up Policies</title>
+      <link>https://heathercl.gitlab.io/entotahugo/terms-policies-and-rules/set_up_policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://heathercl.gitlab.io/entotahugo/terms-policies-and-rules/set_up_policies/</guid>
+      <description>You can add policy to your strategy. Polices are a statement of a standard that guides business decisions. You can define the policy and provide the purpose of the policy, in other words the business reason this policy has been implemented.
+Policies are enforced by Rules.
+As you are setting up a policy, you can click the Guidance () icon to open the Guidance panel to view assistance. Refer to Guidance for more information.</description>
+    </item>
+    
+    <item>
+      <title>Set Up Rules</title>
+      <link>https://heathercl.gitlab.io/entotahugo/terms-policies-and-rules/set_up_rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://heathercl.gitlab.io/entotahugo/terms-policies-and-rules/set_up_rules/</guid>
+      <description>Business Rules can define controls for business data to help businesses achieve goals. Rule compliance is assessed based on a true or false analysis. If the rule statement is true, the rule is achieved. If the statement is false, it is not achieved.
+Rules are assigned to Policies.
+As you are setting up a rule, you can click the Guidance () icon to open the Guidance panel to view assistance. Refer to Guidance for more information.</description>
+    </item>
+    
+  </channel>
+</rss>

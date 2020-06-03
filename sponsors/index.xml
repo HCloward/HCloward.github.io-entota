@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sponsors on Entota Hugo POC</title>
+    <link>https://heathercl.gitlab.io/entotahugo/sponsors/</link>
+    <description>Recent content in Sponsors on Entota Hugo POC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://heathercl.gitlab.io/entotahugo/sponsors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Add a Sponsor to an Asset</title>
+      <link>https://heathercl.gitlab.io/entotahugo/sponsors/add_a_sponsor_to_an_asset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://heathercl.gitlab.io/entotahugo/sponsors/add_a_sponsor_to_an_asset/</guid>
+      <description>You can add one or more sponsors to your asset. When you add or remove a sponsor, the sponsor receives a notification in their notification panel and email, depending on their user settings.
+To add or remove a sponsor:
+  Click the Sponsors icon () on an asset&amp;rsquo;s detail page.
+  Do one of the following:
+  In the Sponsors selection panel, scroll to and click a person&amp;rsquo;s name to select that person as a sponsor.</description>
+    </item>
+    
+    <item>
+      <title>Sponsor an Asset</title>
+      <link>https://heathercl.gitlab.io/entotahugo/sponsors/sponsor_an_asset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://heathercl.gitlab.io/entotahugo/sponsors/sponsor_an_asset/</guid>
+      <description>As a sponsor of an asset, you can update the status of the asset and provide endorsement of or contest an asset.
+When the asset details are defined, sponsors are notified and a sponsor moves the asset to Review status and all sponsors of the asset are notified. If a sponsor contests an asset that is in Review status, the asset is moved back to Candidate status and the color of the Status text changes to reflect that it has been contested, and all sponsors and assignees will receive notification by email, depending on their user settings.</description>
+    </item>
+    
+    <item>
+      <title>Contest an Asset (Non-sponsors)</title>
+      <link>https://heathercl.gitlab.io/entotahugo/sponsors/contest_an_asset_non-sponsors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://heathercl.gitlab.io/entotahugo/sponsors/contest_an_asset_non-sponsors/</guid>
+      <description>You can contest an asset whether or not you are a sponsor of the asset. If an Accepted asset is contested, it is moved back to Candidate status and must be re-endorsed by the asset&#39;s sponsors. All Sponsors and Assignees are notified by email, depending on their user settings, when the asset is contested. Refer to Sponsor an Asset for more information.
+To contest an asset:
+  Click the drop-down menu for the asset.</description>
+    </item>
+    
+  </channel>
+</rss>

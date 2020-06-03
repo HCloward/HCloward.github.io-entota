@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entota Hugo POC</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-06-02T22:01:15 EDT">
+<title>Migration Dashboard :: Entota Hugo POC</title>
+<link rel="shortcut icon" href="/entotahugo/images/favicon.png" type="image/x-icon" />
+<link href="/entotahugo/css/nucleus.css" rel="stylesheet">
+<link href="/entotahugo/css/font-awesome.min.css" rel="stylesheet">
+<link href="/entotahugo/css/hybrid.css" rel="stylesheet">
+<link href="/entotahugo/css/featherlight.min.css" rel="stylesheet">
+<link href="/entotahugo/css/auto-complete.css" rel="stylesheet">
+<link href="/entotahugo/theme-original/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/entotahugo/css/bootstrap.min.css">
+<script src="/entotahugo/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
+<meta name="description" content="">
+
+
+    
+  </head>
+  <body data-url="/entotahugo/dashboards/migration_dashboard/">
+    
+      <div id="headermain"></div>
+<nav id="sidebar" class="showVisitedLinks">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
+  
+    <a class="baselink" href="https://heathercl.gitlab.io/entotahugo/">Entota Hugo POC</a>
+  
+
+
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/entotahugo/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/entotahugo/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/heathercl.gitlab.io\/entotahugo\/";
+        
+		</script>
+		<script type="text/javascript" src="/entotahugo/js/search.js"></script>
+  </div>
+
+      <ul class="topics">
+            <li data-nav-id="/entotahugo/" class="dd-item">
+            <a href="/entotahugo/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+    <li data-nav-id="/entotahugo/administration/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/administration/">Administration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/administration/search_admin/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/search_admin/">
+            Search Admin
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/add_a_user_to_entota/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/add_a_user_to_entota/">
+            Add a User to Entota
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/edit_a_user_account/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/edit_a_user_account/">
+            Edit a User Account
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/update_my_profile/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/update_my_profile/">
+            Update My Profile
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/entota_websocket_firewall_requirements/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/entota_websocket_firewall_requirements/">
+            Entota WebSocket Firewall Requirements
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/dashboards/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/entotahugo/dashboards/">Dashboards</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/dashboards/migration_dashboard/" class="dd-item active">
+        <div>
+          <a href="/entotahugo/dashboards/migration_dashboard/">
+            Migration Dashboard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/dashboards/director_dashboard/" class="dd-item">
+        <div>
+          <a href="/entotahugo/dashboards/director_dashboard/">
+            Director Dashboard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/dashboards/director_dashboard_deep_guidancd/" class="dd-item">
+        <div>
+          <a href="/entotahugo/dashboards/director_dashboard_deep_guidancd/">
+            Director Dashboard Deep Guidance
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/enhanced-search/" class="dd-item
+        ">
+      <div>
+      <a href="/entotahugo/enhanced-search/">Enhanced Search</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/entotahugo/strategy/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/strategy/">Strategy</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/strategy/vision_mission_goals_and_initiatives/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/vision_mission_goals_and_initiatives/">
+            Vision, Mission, Goals, and Initiatives
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_a_vision/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_a_vision/">
+            Add a Vision
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_a_mission/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_a_mission/">
+            Add a Mission
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_goals/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_goals/">
+            Add Goals
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_initiatives/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_initiatives/">
+            Add Initiatives
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/terms-policies-and-rules/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/terms-policies-and-rules/">Terms, Policies, and Rules</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/terms-policies-and-rules/set_up_terms/" class="dd-item">
+        <div>
+          <a href="/entotahugo/terms-policies-and-rules/set_up_terms/">
+            Set Up Terms
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/terms-policies-and-rules/set_up_policies/" class="dd-item">
+        <div>
+          <a href="/entotahugo/terms-policies-and-rules/set_up_policies/">
+            Set Up Policies
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/terms-policies-and-rules/set_up_rules/" class="dd-item">
+        <div>
+          <a href="/entotahugo/terms-policies-and-rules/set_up_rules/">
+            Set Up Rules
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/data-catalog/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/data-catalog/">Data Catalog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/data-catalog/set_up_a_system/" class="dd-item">
+        <div>
+          <a href="/entotahugo/data-catalog/set_up_a_system/">
+            Set Up a System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/data-catalog/set_up_a_data_set/" class="dd-item">
+        <div>
+          <a href="/entotahugo/data-catalog/set_up_a_data_set/">
+            Set Up a Data Set
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/data-catalog/import_fields_to_a_system/" class="dd-item">
+        <div>
+          <a href="/entotahugo/data-catalog/import_fields_to_a_system/">
+            Import Fields to a System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/sponsors/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/sponsors/">Sponsors</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/sponsors/add_a_sponsor_to_an_asset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/sponsors/add_a_sponsor_to_an_asset/">
+            Add a Sponsor to an Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/sponsors/sponsor_an_asset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/sponsors/sponsor_an_asset/">
+            Sponsor an Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/sponsors/contest_an_asset_non-sponsors/" class="dd-item">
+        <div>
+          <a href="/entotahugo/sponsors/contest_an_asset_non-sponsors/">
+            Contest an Asset (Non-sponsors)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/guidance/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/guidance/">Guidance test</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/guidance/guidance/" class="dd-item">
+        <div>
+          <a href="/entotahugo/guidance/guidance/">
+            Guidance
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/relationships/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/relationships/">Relationships</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/relationships/addarelationshiptoanonstrategyasset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/addarelationshiptoanonstrategyasset/">
+            Add a Relationship to a Non-Strategy Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/relationships/addarelationshiptoastrategyasset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/addarelationshiptoastrategyasset/">
+            Add a Relationship to a Strategy Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/relationships/addatermtotermrelationship/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/addatermtotermrelationship/">
+            Add a Term-to-Term Relationship
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/relationships/deep_guidance_inferred_relationships/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/deep_guidance_inferred_relationships/">
+            Deep Guidance™ Inferred Relationships
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/asset-options/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/asset-options/">Asset Options</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/asset-options/share_urls_for_assets/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/share_urls_for_assets/">
+            Share URLs for Assets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/view_change_history_for_assets/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/view_change_history_for_assets/">
+            View Change History for Assets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/comment_on_an_asset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/comment_on_an_asset/">
+            Comment on an Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/add_supporting_doc/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/add_supporting_doc/">
+            Add Supporting Documentation to Assets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/enforcementprofiles/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/enforcementprofiles/">
+            Enforcement Profiles
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/notifications/" class="dd-item
+        ">
+      <div>
+      <a href="/entotahugo/notifications/">Notifications</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/entotahugo/release-notes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/release-notes/">Entota Release Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0418/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0418/">
+            April 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0818/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0818/">
+            August 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1217/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1217/">
+            December 2017
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1218/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1218/">
+            December 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0218/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0218/">
+            February 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0118/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0118/">
+            January 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0119/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0119/">
+            January 2019
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0718/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0718/">
+            July 2019
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0618/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0618/">
+            June 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0318/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0318/">
+            March 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0518/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0518/">
+            May 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1118/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1118/">
+            November 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1018/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1018/">
+            October 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0918/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0918/">
+            September 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/use-help/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/use-help/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/use-help/basic_navigation/" class="dd-item">
+        <div>
+          <a href="/entotahugo/use-help/basic_navigation/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/use-help/online_help_search_tips/" class="dd-item">
+        <div>
+          <a href="/entotahugo/use-help/online_help_search_tips/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/use-help/print_feedback_version/" class="dd-item">
+        <div>
+          <a href="/entotahugo/use-help/print_feedback_version/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/getting-started/" class="dd-item
+        ">
+      <div>
+      <a href="/entotahugo/getting-started/">Getting Started with Entota</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+        <section id="shortcuts">
+                <li class="" role=""><h3>More</h3><a href="/entotahugo/release-notes" target="_blank" rel="noopener"><i class='fa fa-umbrella'></i> <label>Release Notes</label></a></li>
+                <li class="" role=""><a href="/entotahugo/use-help" target="_blank" rel="noopener"><i class='fa fa-rocket'></i> <label>How to Use Help</label></a></li>
+                <li class="" role=""><a href="Getting%20Started%20with%20Entota" target="_blank" rel="noopener"><i class='fa fa-bookmark'></i> <label>Getting Started with Entota</label></a></li>
+                <li class="" role=""><a href="/entotahugo/credits" target="_blank" rel="noopener"><i class='fa fa-bullhorn'></i> <label>Credits</label></a></li>
+        </section>
+            <a id="clear-history" class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
+
+    <hr />
+    <li></li>
+    
+    </ul>
+
+ <section id="footer">
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    
+      
+      
+      
+    <div id="top-github-link">
+      <a class="github-link" href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/Dashboards/Migration_Dashboard.md" target="blank">
+        <i class="fa fa-code-fork"></i>
+        Improve this page
+      </a>
+    </div><div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+        <span class="links">
+        
+
+
+
+
+
+
+
+ <a href='/entotahugo/'>Welcome to Entota Help</a> > <a href='/entotahugo/dashboards/'>Dashboards</a> > Migration Dashboard
+
+ 
+
+ 
+
+   
+        </span>
+    </div>
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#accessaccess-the-migration-dashboard">[]{#Access}Access the Migration Dashboard</a></li>
+    <li><a href="#whenwhen-should-i-configure-the-wave-to-send-metrics-to-the-dashboard">[]{#When}When should I configure the Wave to send metrics to the Dashboard?</a></li>
+    <li><a href="#when2when-will-metrics-percentages-increase-from-0">[]{#When2}When will Metrics Percentages Increase from 0%?</a></li>
+    <li><a href="#when3when-is-data-sent-to-the-dashboard">[]{#When3}When is Data Sent to the Dashboard?</a></li>
+    <li><a href="#projectproject-waves-timeline-chart">[]{#Project}Project Waves Timeline Chart</a></li>
+    <li><a href="#milestonmilestone-details">[]{#Mileston}Milestone Details</a></li>
+    <li><a href="#migratiomigration-dashboard-detail-page">[]{#Migratio}Migration Dashboard Detail Page</a></li>
+  </ul>
+</nav>
+        </div>
+    </div>
+    
+
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>Migration Dashboard</h1>
+  
+
+
+
+    
+    
+    
+    <p>The Migration dashboard, available with DSP 7.0.1 and later, provides
+visibility into progress and status associated with enterprise Data
+Migration efforts by giving you access to the most important migration
+project metrics.</p>
+<p>Using this dashboard you can:</p>
+<ul>
+<li>Understand the current status of migration waves</li>
+<li>Identify any waves that are running behind schedule</li>
+<li>Ascertain go-live readiness for a wave</li>
+</ul>
+<p>Whether you are responsible for one or multiple waves, across a single
+instance or multiple instances in the DSP, you can view progress against
+milestones to assess risk, determine a need for resource adjustment and
+communicate effectively to all project stakeholders.</p>
+<p><strong>NOTE</strong>: The waves that display on the dashboard, along with their
+milestones and thresholds, are configured in the DSP. Refer to
+<a href="https://dsphelp.boaweb.com/702/general/Configure%20the%20Migration%20Dashboard.htm">Configure the Migration
+Dashboard</a>
+for more information.</p>
+<p>The Migration dashboard can be used on desktop, iOS 11 or later, and
+Android Oreo, using Chrome, IE 11 and Safari browsers.</p>
+<p>This topic contains:</p>
+<ul>
+<li><a href="#Access">Access the Migration Dashboard</a></li>
+<li><a href="#When">When should I configure the Wave to send metrics to the
+Dashboard?</a></li>
+<li><a href="#When2">When will Metrics Percentages Increase from 0%?</a></li>
+<li><a href="#When3">When is data sent to the Dashboard?</a></li>
+<li><a href="#Project">Project Waves Timeline Chart</a></li>
+<li><a href="#Mileston">Milestone Details</a></li>
+<li><a href="#Migratio">Migration Dashboard Detail Page</a></li>
+</ul>
+<h2 id="accessaccess-the-migration-dashboard">[]{#Access}Access the Migration Dashboard</h2>
+<p>If you are assigned the Migration persona, the Migration dashboard
+displays when you log in to Entota. If you do not have access to the
+dashboard, your Entota tenant administrator should be able to help, or
+you can send an email to your Customer Success Team.</p>
+<p>If you have purchased a subscription for Entota, access it by clicking
+the menu link in the upper right of the Migration Dashboard.</p>
+<p>When in Entota, click the Entota logo in the upper left to access the
+Migration dashboard.</p>
+<p><strong>NOTE</strong>: To access the Migration dashboard as you would an app on your
+mobile device, use the Add to Home Screen feature. It launches in full
+screen mode, can be switched with other tasks, and supports the
+device's default orientation.</p>
+<h2 id="whenwhen-should-i-configure-the-wave-to-send-metrics-to-the-dashboard">[]{#When}When should I configure the Wave to send metrics to the Dashboard?</h2>
+<p>Configure a wave within the DSP to send data to the dashboard after the
+initial structure of the wave (wave, process areas and objects) has been
+defined and the first steps of Target Design have begun. The first
+metrics displayed on the Dashboard are Design Complete, thus there is no
+requirement to configure the Wave to send metrics data to the dashboard
+until after Target Design has started.</p>
+<h2 id="when2when-will-metrics-percentages-increase-from-0">[]{#When2}When will Metrics Percentages Increase from 0%?</h2>
+<p>After the wave is configured to send data to the dashboard the metrics
+are calculated for all four milestones.</p>
+<ul>
+<li>Design Complete percentage rises above 0% once targets are assigned
+a design status of Design Finished or Complete in Target Design in
+the DSP.</li>
+<li>Mappings Complete is calculated across both field and value mapping
+and rises above 0% once a Target Design is synced to Map in the DSP.</li>
+<li>Rules Complete percentage increases once source and target rules
+that are defined in Target Design and Map have been assigned a
+status of Complete in Map in the DSP.</li>
+<li>Data Quality is calculated when a user registers a target report for
+each of the Opportunity reports and Error reports in the DSP. The
+calculation compares the record counts in each of these registered
+reports to calculate a quality percentage.</li>
+</ul>
+<p>Flexibility is built into the Data Quality metric calculation. In the
+DSP, a user can register an Opportunity report and Error report for each
+target defined within the wave. In most situations, a single Opportunity
+report and Error report is defined using the Target Report syntax
+tv&hellip;Sel at the top-level target for the object.</p>
+<p>For example, for SAP Material, the top-level target is MARA (Material
+Basic Data). The Opportunity report counts all materials in the target
+table data set and the Error report counts all distinct material IDs
+that have an error at any level of the Material target data structure
+(errors in MARC, MARD etc). By defining the reports in this way, a
+simple calculation can be performed at an object level which is then
+rolled up across all objects within the wave. Refer to <a href="https://dsphelp.boaweb.com/702/general/Configure%20the%20Migration%20Dashboard.htm">Configure the
+Migration
+Dashboard</a>
+for more information.</p>
+<h2 id="when3when-is-data-sent-to-the-dashboard">[]{#When3}When is Data Sent to the Dashboard?</h2>
+<p>Data is sent to the Migration dashboard when:</p>
+<ul>
+<li>A wave has been created and added to the Migration dashboard
+following the steps in Configure the Migration Dashboard</li>
+<li>A wave that has been added to the Migration dashboard has the name,
+description, start date or end date updated in Console in the DSP</li>
+<li>A wave is deleted in Console</li>
+<li>A milestone is created by the user in the DSP</li>
+<li>A milestone is updated by the user in the DSP</li>
+<li>A user-created milestone is deleted in the DSP</li>
+</ul>
+<p>By default, when a wave is configured to be included in the dashboard, a
+start and end date milestone are added and the thresholds are set at 0%.</p>
+<p>The dashboard does not display data if:</p>
+<ul>
+<li>The waves have not been configured in the DSP.</li>
+<li>Waves have been configured but the end dates for all waves have
+passed by one month.</li>
+<li>There is an issue with the data, connectivity, or other errors. In
+this case, a link to Customer Support displays.</li>
+</ul>
+<p>A wave does not display on the dashboard if:</p>
+<ul>
+<li>The wave has been configured in the DSP, but the current date is
+greater than one month past the wave&rsquo;s end date</li>
+<li>The wave has been configured in the DSP, but has then been deleted
+from Console in the DSP</li>
+</ul>
+<p>A DSP user can also configure metrics data to stop being sent from the
+DSP. In this case, the metrics data no longer updates, but does continue
+to display in the detail row on the dashboard.</p>
+<h2 id="projectproject-waves-timeline-chart">[]{#Project}Project Waves Timeline Chart</h2>
+<p>The Project Waves Timeline Gantt chart displays all waves that:</p>
+<ul>
+<li>Have been configured to display in the DSP</li>
+<li>Have an end date that is less than 28 days from the current date</li>
+</ul>
+<p>Waves are sorted in the chart by end date in ascending order. The wave
+with the next end date displays first.</p>
+<p>The time span displayed on the timeline is based on the earliest start
+date and the latest end date for all waves.</p>
+<p>On a desktop, hover your cursor over a wave to see the day for the start
+and end date. On a device, tap the wave once to see the details.</p>
+<p>On a desktop, to view the milestone details, click the wave in the
+timeline, or scroll down. On a device, tap the wave twice to scroll to
+the details for that wave.</p>
+<h2 id="milestonmilestone-details">[]{#Mileston}Milestone Details</h2>
+<p>Detail rows are also sorted by wave with end date in ascending order.
+The wave with next end date displays first. If multiple waves have the
+same end date, they are then sorted by start date in ascending order.</p>
+<p>The data is current as of the Last Updated date and time displayed in
+the upper right of the dashboard. Metrics data is updated hourly.</p>
+<p>For each wave, the start and end date display, followed by metrics data
+related to each milestone in a detail row. All waves have a start and
+end date milestone by default. Additional milestones can be added in the
+DSP.</p>
+<p>The following metrics display for each milestone.</p>
+<ul>
+<li>Design Complete indicates how much of the design work has been
+completed. This percentage is calculated as the total number of
+active fields within active targets where design is complete (the
+design status is Design Complete or Finished) divided by the total
+number of active fields within active targets, regardless of design
+status.</li>
+<li>Mappings Complete indicates how much of the field mapping and value
+mapping work has been completed. This percentage is calculated as
+the total number of total mappings opportunities for both value and
+field mapping divided by the total number of mappings in Complete
+status.</li>
+<li>Rules Complete indicates how many of the rules have been completed.
+This percentage is calculated by the total number of source and
+target rules for the active fields with a rule status of Complete
+divided by the total number of source and target rules (also called
+rule opportunities).</li>
+<li>Quality indicates the data quality of the wave. This percentage is
+calculated using the totals on the Error reports registered to the
+wave and targets (post load reports) divided by the total number of
+records on the Opportunity reports registered to the waves and
+targets (preload reports).</li>
+</ul>
+<p>On a desktop, hover your cursor over a metric to view details about the
+milestone date, current percentage, milestone goal and thresholds. On a
+device, tap the metric to view these details.</p>
+<p>The metrics percentage calculations listed above are compared to the
+thresholds configured in the DSP in relation to the milestone date. If
+the percentage calculation is equal to or greater than the upper
+threshold percentage, this milestone is complete and the detail row for
+the metric displays green on the dashboard. If the percentage
+calculation is between the upper and lower thresholds, the detail row
+for the metric displays light blue. If the percentage calculation is
+less than or equal to the lower threshold, the detail row for the metric
+displays red.</p>
+<p><strong>NOTE</strong>: If a milestone is added for the current date, it does not
+display in the dashboard.</p>
+<h2 id="migratiomigration-dashboard-detail-page">[]{#Migratio}Migration Dashboard Detail Page</h2>
+<p>Users with the Migration persona can view additional details about a
+migration project&rsquo;s progress on the Migration Dashboard&rsquo;s Detail page.
+The Detail page is also a dashboard, and allows you to understand prior
+trends and current progress being made towards the defined milestone
+thresholds per wave.</p>
+<p>The data is current as of the Last Updated date and time displayed in
+the upper right of the Detail page. Data is updated and refreshed on the
+Detail page hourly.</p>
+<p>All waves have a start and end date milestone by default. Milestones are
+added in the DSP.</p>
+<p>The Detail page contains these sections.</p>
+<ul>
+<li><strong>A Gantt chart displaying a timeline for milestones for the
+selected wave</strong>. As with the Migration Dashboard, milestones are
+sorted in the chart by end date in ascending order. On a desktop,
+hover your cursor over a milestone to see the the start and end
+date. On a device, tap the milestone once to see these details. The
+timespan displayed on the timeline is based on the earliest start
+date and the latest end date for all milestones for the wave.</li>
+<li><strong>Current Metric values compared to next Milestone.</strong> Hover over
+each metric to view details about the milestone date, the current
+percentage, and the threshold percentage range. On a desktop, hover
+your cursor over a milestone metric to see the the details. On a
+device, tap the milestone metric once to see the details.</li>
+<li><strong>A line chart with history of progress on the current milestone&rsquo;s
+metrics</strong>, using data collected metrics from the Start Date of the
+wave to the current date. The X-axis includes the beginning and end
+dates of collected data for the wave. There is a line for each of
+three of the metrics. The Data Quality metric is not tracked on the
+History line graph. On a desktop, hover your cursor over a date
+point in the line to see the details. On a device, tap the line to
+view these details.</li>
+<li><strong>A table with details about each milestone&rsquo;s targeted and actual
+percentage for the metrics.</strong> The actual value is calculated from
+DSP data. The target value ranges are the threshold values set in
+the DSP. A red icon displays next to those at risk values that are
+below the low threshold range for the milestone. A green icon
+displays in the first column to indicate a milestone whose
+percentages have met or exceeded their threshold values and is
+therefor complete.</li>
+</ul>
+<p>To return to the Migration Dashboard, click the wave name at the top of
+the Detail page.</p>
+
+
+    
+    
+          <footer class=" footline" >
+	
+</footer>
+  </div>
+</div>
+
+<div id="navigation">
+<a class="nav nav-prev" href="/entotahugo/dashboards/" title="Dashboards"> <i class="fa fa-chevron-left"></i><label>Dashboards</label></a>
+    <a class="nav nav-next" href="/entotahugo/dashboards/director_dashboard/" title="Director Dashboard" style="margin-right: 0px;"><label>Director Dashboard</label><i class="fa fa-chevron-right"></i></a></div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+<script src="/entotahugo/js/clipboard.min.js"></script>
+<script src="/entotahugo/js/featherlight.min.js"></script>
+<script src="/entotahugo/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/entotahugo/js/modernizr.custom.71422.js"></script>
+<script src="/entotahugo/js/docdock.js"></script>
+<script src="/entotahugo/theme-original/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

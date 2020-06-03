@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entota Hugo POC</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2020-06-02T22:01:15 EDT">
+<title>Import Fields to a System :: Entota Hugo POC</title>
+<link rel="shortcut icon" href="/entotahugo/images/favicon.png" type="image/x-icon" />
+<link href="/entotahugo/css/nucleus.css" rel="stylesheet">
+<link href="/entotahugo/css/font-awesome.min.css" rel="stylesheet">
+<link href="/entotahugo/css/hybrid.css" rel="stylesheet">
+<link href="/entotahugo/css/featherlight.min.css" rel="stylesheet">
+<link href="/entotahugo/css/auto-complete.css" rel="stylesheet">
+<link href="/entotahugo/theme-original/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/entotahugo/css/bootstrap.min.css">
+<script src="/entotahugo/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
+<meta name="description" content="">
+
+
+    
+  </head>
+  <body data-url="/entotahugo/data-catalog/import_fields_to_a_system/">
+    
+      <div id="headermain"></div>
+<nav id="sidebar" class="showVisitedLinks">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
+  
+    <a class="baselink" href="https://heathercl.gitlab.io/entotahugo/">Entota Hugo POC</a>
+  
+
+
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/entotahugo/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/entotahugo/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/heathercl.gitlab.io\/entotahugo\/";
+        
+		</script>
+		<script type="text/javascript" src="/entotahugo/js/search.js"></script>
+  </div>
+
+      <ul class="topics">
+            <li data-nav-id="/entotahugo/" class="dd-item">
+            <a href="/entotahugo/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+    <li data-nav-id="/entotahugo/administration/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/administration/">Administration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/administration/search_admin/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/search_admin/">
+            Search Admin
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/add_a_user_to_entota/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/add_a_user_to_entota/">
+            Add a User to Entota
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/edit_a_user_account/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/edit_a_user_account/">
+            Edit a User Account
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/update_my_profile/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/update_my_profile/">
+            Update My Profile
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/administration/entota_websocket_firewall_requirements/" class="dd-item">
+        <div>
+          <a href="/entotahugo/administration/entota_websocket_firewall_requirements/">
+            Entota WebSocket Firewall Requirements
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/dashboards/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/dashboards/">Dashboards</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/dashboards/migration_dashboard/" class="dd-item">
+        <div>
+          <a href="/entotahugo/dashboards/migration_dashboard/">
+            Migration Dashboard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/dashboards/director_dashboard/" class="dd-item">
+        <div>
+          <a href="/entotahugo/dashboards/director_dashboard/">
+            Director Dashboard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/dashboards/director_dashboard_deep_guidancd/" class="dd-item">
+        <div>
+          <a href="/entotahugo/dashboards/director_dashboard_deep_guidancd/">
+            Director Dashboard Deep Guidance
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/enhanced-search/" class="dd-item
+        ">
+      <div>
+      <a href="/entotahugo/enhanced-search/">Enhanced Search</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/entotahugo/strategy/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/strategy/">Strategy</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/strategy/vision_mission_goals_and_initiatives/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/vision_mission_goals_and_initiatives/">
+            Vision, Mission, Goals, and Initiatives
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_a_vision/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_a_vision/">
+            Add a Vision
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_a_mission/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_a_mission/">
+            Add a Mission
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_goals/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_goals/">
+            Add Goals
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/strategy/add_initiatives/" class="dd-item">
+        <div>
+          <a href="/entotahugo/strategy/add_initiatives/">
+            Add Initiatives
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/terms-policies-and-rules/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/terms-policies-and-rules/">Terms, Policies, and Rules</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/terms-policies-and-rules/set_up_terms/" class="dd-item">
+        <div>
+          <a href="/entotahugo/terms-policies-and-rules/set_up_terms/">
+            Set Up Terms
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/terms-policies-and-rules/set_up_policies/" class="dd-item">
+        <div>
+          <a href="/entotahugo/terms-policies-and-rules/set_up_policies/">
+            Set Up Policies
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/terms-policies-and-rules/set_up_rules/" class="dd-item">
+        <div>
+          <a href="/entotahugo/terms-policies-and-rules/set_up_rules/">
+            Set Up Rules
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/data-catalog/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/entotahugo/data-catalog/">Data Catalog</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/data-catalog/set_up_a_system/" class="dd-item">
+        <div>
+          <a href="/entotahugo/data-catalog/set_up_a_system/">
+            Set Up a System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/data-catalog/set_up_a_data_set/" class="dd-item">
+        <div>
+          <a href="/entotahugo/data-catalog/set_up_a_data_set/">
+            Set Up a Data Set
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/data-catalog/import_fields_to_a_system/" class="dd-item active">
+        <div>
+          <a href="/entotahugo/data-catalog/import_fields_to_a_system/">
+            Import Fields to a System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/sponsors/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/sponsors/">Sponsors</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/sponsors/add_a_sponsor_to_an_asset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/sponsors/add_a_sponsor_to_an_asset/">
+            Add a Sponsor to an Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/sponsors/sponsor_an_asset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/sponsors/sponsor_an_asset/">
+            Sponsor an Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/sponsors/contest_an_asset_non-sponsors/" class="dd-item">
+        <div>
+          <a href="/entotahugo/sponsors/contest_an_asset_non-sponsors/">
+            Contest an Asset (Non-sponsors)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/guidance/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/guidance/">Guidance test</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/guidance/guidance/" class="dd-item">
+        <div>
+          <a href="/entotahugo/guidance/guidance/">
+            Guidance
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/relationships/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/relationships/">Relationships</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/relationships/addarelationshiptoanonstrategyasset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/addarelationshiptoanonstrategyasset/">
+            Add a Relationship to a Non-Strategy Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/relationships/addarelationshiptoastrategyasset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/addarelationshiptoastrategyasset/">
+            Add a Relationship to a Strategy Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/relationships/addatermtotermrelationship/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/addatermtotermrelationship/">
+            Add a Term-to-Term Relationship
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/relationships/deep_guidance_inferred_relationships/" class="dd-item">
+        <div>
+          <a href="/entotahugo/relationships/deep_guidance_inferred_relationships/">
+            Deep Guidance™ Inferred Relationships
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/asset-options/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/asset-options/">Asset Options</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/asset-options/share_urls_for_assets/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/share_urls_for_assets/">
+            Share URLs for Assets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/view_change_history_for_assets/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/view_change_history_for_assets/">
+            View Change History for Assets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/comment_on_an_asset/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/comment_on_an_asset/">
+            Comment on an Asset
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/add_supporting_doc/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/add_supporting_doc/">
+            Add Supporting Documentation to Assets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/asset-options/enforcementprofiles/" class="dd-item">
+        <div>
+          <a href="/entotahugo/asset-options/enforcementprofiles/">
+            Enforcement Profiles
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/notifications/" class="dd-item
+        ">
+      <div>
+      <a href="/entotahugo/notifications/">Notifications</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/entotahugo/release-notes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/release-notes/">Entota Release Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0418/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0418/">
+            April 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0818/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0818/">
+            August 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1217/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1217/">
+            December 2017
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1218/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1218/">
+            December 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0218/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0218/">
+            February 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0118/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0118/">
+            January 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0119/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0119/">
+            January 2019
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0718/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0718/">
+            July 2019
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0618/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0618/">
+            June 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0318/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0318/">
+            March 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0518/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0518/">
+            May 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1118/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1118/">
+            November 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases1018/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases1018/">
+            October 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/release-notes/entotareleases0918/" class="dd-item">
+        <div>
+          <a href="/entotahugo/release-notes/entotareleases0918/">
+            September 2018
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/use-help/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/entotahugo/use-help/"></a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/entotahugo/use-help/basic_navigation/" class="dd-item">
+        <div>
+          <a href="/entotahugo/use-help/basic_navigation/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/use-help/online_help_search_tips/" class="dd-item">
+        <div>
+          <a href="/entotahugo/use-help/online_help_search_tips/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/entotahugo/use-help/print_feedback_version/" class="dd-item">
+        <div>
+          <a href="/entotahugo/use-help/print_feedback_version/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/entotahugo/getting-started/" class="dd-item
+        ">
+      <div>
+      <a href="/entotahugo/getting-started/">Getting Started with Entota</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+        <section id="shortcuts">
+                <li class="" role=""><h3>More</h3><a href="/entotahugo/release-notes" target="_blank" rel="noopener"><i class='fa fa-umbrella'></i> <label>Release Notes</label></a></li>
+                <li class="" role=""><a href="/entotahugo/use-help" target="_blank" rel="noopener"><i class='fa fa-rocket'></i> <label>How to Use Help</label></a></li>
+                <li class="" role=""><a href="Getting%20Started%20with%20Entota" target="_blank" rel="noopener"><i class='fa fa-bookmark'></i> <label>Getting Started with Entota</label></a></li>
+                <li class="" role=""><a href="/entotahugo/credits" target="_blank" rel="noopener"><i class='fa fa-bullhorn'></i> <label>Credits</label></a></li>
+        </section>
+            <a id="clear-history" class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
+
+    <hr />
+    <li></li>
+    
+    </ul>
+
+ <section id="footer">
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    
+      
+      
+      
+    <div id="top-github-link">
+      <a class="github-link" href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/Data%20Catalog/Import_Fields_to_a_System.md" target="blank">
+        <i class="fa fa-code-fork"></i>
+        Improve this page
+      </a>
+    </div><div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+        <span class="links">
+        
+
+
+
+
+
+
+
+ <a href='/entotahugo/'>Welcome to Entota Help</a> > <a href='/entotahugo/data-catalog/'>Data Catalog</a> > Import Fields to a System
+
+ 
+
+ 
+
+   
+        </span>
+    </div>
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#fields-json-import-file-format">Fields JSON Import File Format</a></li>
+    <li><a href="#removefieldsremove-fields-from-a-system">[]{#RemoveFields}Remove Fields from a System</a></li>
+  </ul>
+</nav>
+        </div>
+    </div>
+    
+
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>Import Fields to a System</h1>
+  
+
+
+
+    
+    
+    
+    <p>You can upload field metadata for a System in a zipped JSON file using
+the upload option on the System detail page.</p>
+<h2 id="fields-json-import-file-format">Fields JSON Import File Format</h2>
+<p>Use the following schema information to format the JSON file that is
+used to load field metadata for a System.</p>
+<p><strong>Format:</strong></p>
+<p>{</p>
+<p>&quot;version&quot;: &quot;2018-02-07&quot;,</p>
+<p>&quot;fields&quot;:[</p>
+<p>{</p>
+<p>&quot;name&quot;: &quot;...&quot;,</p>
+<p>&quot;location&quot;: {...},</p>
+<p>&quot;type&quot;: {..}</p>
+<p>}</p>
+<p>]</p>
+<p>}</p>
+<p> </p>
+<p>You can request a sample JSON file by <a href="Contact%20Support.htm">submitting a request to
+support</a>.</p>
+<p> </p>
+<p>Properties in &ldquo;root&rdquo;:</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Property        | Description     | Presence        | Example 1       |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| version         | Schema version  | Must be present | &ldquo;2018-02-07&rdquo;    |
+|                 | as string       |                 |                 |
+|                 |                 | <strong>NOTE</strong>: This  |                 |
+|                 |                 | is a hard coded |                 |
+|                 |                 | value that MUST |                 |
+|                 |                 | be set to this  |                 |
+|                 |                 | exact string    |                 |
+|                 |                 | for this        |                 |
+|                 |                 | version of the  |                 |
+|                 |                 | API             |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| fields          | Array of JSON   | Must be present |                 |
+|                 | object          |                 |                 |
+|                 |                 | <strong>NOTE</strong>: See   |                 |
+|                 |                 | properties      |                 |
+|                 |                 | below           |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p>Properties in &ldquo;fields&rdquo; array:</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Property        | Description     | Presence        | Example 1       |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| name            | The friendly    | Must be present | Customer Name   |
+|                 | name of the     |                 |                 |
+|                 | field.          | <strong>NOTE</strong>: This  |                 |
+|                 |                 | is the Friendly |                 |
+|                 |                 | Name that       |                 |
+|                 |                 | displays in the |                 |
+|                 |                 | UI on the Data  |                 |
+|                 |                 | Set page.       |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| location        | The full        | Must be present | JSON { &hellip; }    |
+|                 | system-specific |                 |                 |
+|                 | path, location  |                 | (see &ldquo;location&rdquo; |
+|                 | information for |                 | table below)    |
+|                 | a field.  This  |                 |                 |
+|                 | is a JSON bag.  |                 |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| type            | The full        | Must be present | JSON { &hellip; }    |
+|                 | system-specific |                 |                 |
+|                 | data type       |                 | (see &ldquo;type&rdquo;     |
+|                 | information for |                 | table below)    |
+|                 | a field.  This  |                 |                 |
+|                 | is a JSON bag.  |                 |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| tags            | An array of     | May be present. | [ &ldquo;KUNNR&rdquo;,     |
+|                 | terms that      |                 | &ldquo;Customer Name&rdquo; |
+|                 | should be       |                 |  ]             |
+|                 | indexed along   |                 |                 |
+|                 | with this field |                 |                 |
+|                 | for search.     |                 |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| usage           | Contains        | May be present. |                 |
+|                 | system-specific | Default is the  |                 |
+|                 | usage or        | empty string.   |                 |
+|                 | context data,   |                 |                 |
+|                 | if available.   |                 |                 |
+|                 |                 |                 |                 |
+|                 | For example,    |                 |                 |
+|                 | the content of  |                 |                 |
+|                 | a database&rsquo;s    |                 |                 |
+|                 | data            |                 |                 |
+|                 | dictionary, a   |                 |                 |
+|                 | MSSQL column    |                 |                 |
+|                 | comment, etc.   |                 |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p>Properties in &ldquo;location&rdquo;:</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Property        | Description     | Presence        | Example 1       |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| technicalName   | A short name of | Must be present | KUNNR           |
+|                 | the field name  |                 |                 |
+|                 |                 | <strong>NOTE</strong>: This  |                 |
+|                 |                 | is the          |                 |
+|                 |                 | Technical Name  |                 |
+|                 |                 | that displays   |                 |
+|                 |                 | in the UI on    |                 |
+|                 |                 | the Data Set    |                 |
+|                 |                 | page.           |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| path            | The full        | Must be present | dbo.KNA1.KUNNR  |
+|                 | system-specific |                 |                 |
+|                 | path, location  | <strong>NOTE</strong>: This  |                 |
+|                 | information for | is the Location |                 |
+|                 | a field         | (under the      |                 |
+|                 |                 | system name)    |                 |
+|                 |                 | that displays   |                 |
+|                 |                 | in the UI on    |                 |
+|                 |                 | the Data Set    |                 |
+|                 |                 | page.           |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| &lt;custom        | Any other       | May be present. |                 |
+| properties&gt;    | custom property |                 |                 |
+|                 | that            |                 |                 |
+|                 | integrators may |                 |                 |
+|                 | choose to       |                 |                 |
+|                 | upload; any     |                 |                 |
+|                 | other           |                 |                 |
+|                 | system-specific |                 |                 |
+|                 | properties.     |                 |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p>Properties in &ldquo;type&rdquo;:</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Property        | Description     | Presence        | Example 1       |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| dataTypeIntent  | A simplified    | May be present  | text            |
+|                 | data type from  |                 |                 |
+|                 | this list:      |                 |                 |
+|                 | text, number,   |                 |                 |
+|                 | Boolean, date,  |                 |                 |
+|                 | money,          |                 |                 |
+|                 | location,       |                 |                 |
+|                 | binary,         |                 |                 |
+|                 | identifier      |                 |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| baseDataType    | The field data  | Must be present | nvarchar        |
+|                 | type            |                 |                 |
+|                 |                 | <strong>NOTE</strong>: This  |                 |
+|                 |                 | is displayed in |                 |
+|                 |                 | the UI on the   |                 |
+|                 |                 | Add Fields tab  |                 |
+|                 |                 | on the Data Set |                 |
+|                 |                 | page.           |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| range           | Range           | Must be present | JSON { &hellip; }    |
+|                 | constraints     | if applicable.  | (see &ldquo;range&rdquo;    |
+|                 |                 |                 | table below)    |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| precision       | A precision for | Must be present |                 |
+|                 | numeric data    | when            |                 |
+|                 | types           | baseDataType is |                 |
+|                 |                 | numeric;        |                 |
+|                 |                 | otherwise, must |                 |
+|                 |                 | not be present. |                 |
+|                 |                 |                 |                 |
+|                 |                 | <strong>NOTE:</strong> This  |                 |
+|                 |                 | is displayed in |                 |
+|                 |                 | the UI on the   |                 |
+|                 |                 | Add Fields tab  |                 |
+|                 |                 | on the Data Set |                 |
+|                 |                 | detail page on  |                 |
+|                 |                 | the Data Set -  |                 |
+|                 |                 | Fields and Data |                 |
+|                 |                 | Set - Add       |                 |
+|                 |                 | Fields tabs.    |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| length          | A length value  | Must be present | 36              |
+|                 | for characters  | when            |                 |
+|                 | types           | baseDataType is |                 |
+|                 |                 | an array of     |                 |
+|                 |                 | characters or   |                 |
+|                 |                 | bytes;          |                 |
+|                 |                 | otherwise, must |                 |
+|                 |                 | not be present. |                 |
+|                 |                 |                 |                 |
+|                 |                 | <strong>NOTE</strong>: This  |                 |
+|                 |                 | is displayed in |                 |
+|                 |                 | the UI on the   |                 |
+|                 |                 | Add Fields tab  |                 |
+|                 |                 | on the Data Set |                 |
+|                 |                 | page.           |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| encoding        | Additional      | Must be present | &ldquo;Utf-8&rdquo;,        |
+|                 | details about   | if applicable   | &ldquo;latin-1&rdquo;,      |
+|                 | the encoding of |                 | IEEE-754        |
+|                 | the field       | <strong>NOTE</strong>: This  | floating point, |
+|                 |                 | can be a        | binary data is  |
+|                 |                 | string.         | in big-endian   |
+|                 |                 |                 | or              |
+|                 |                 |                 | little-endian,  |
+|                 |                 |                 | bools are       |
+|                 |                 |                 | 0xFFFFF or      |
+|                 |                 |                 | 0x00001 etc.    |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| identity        | Indicates       | May be present. | true            |
+|                 | whether this    |                 |                 |
+|                 | field is an     | <strong>NOTE</strong>:       |                 |
+|                 | identifier in   | Default to      |                 |
+|                 | the underlying  | false.          |                 |
+|                 | model (e.g., a  |                 |                 |
+|                 | primary key in  |                 |                 |
+|                 | a relational db |                 |                 |
+|                 | context, or a   |                 |                 |
+|                 | resource        |                 |                 |
+|                 |  identifier in  |                 |                 |
+|                 | a REST API      |                 |                 |
+|                 | context)        |                 |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| optional        | A determination | May be present. | true            |
+|                 | if the field    |                 |                 |
+|                 | can be nullable | <strong>NOTE</strong>:       |                 |
+|                 |                 | Default to      |                 |
+|                 |                 | false.          |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| &lt;custom        | Any other       | May be present. |                 |
+| properties&gt;    | custom property |                 |                 |
+|                 | that            |                 |                 |
+|                 | integrators may |                 |                 |
+|                 | choose to       |                 |                 |
+|                 | upload; any     |                 |                 |
+|                 | other           |                 |                 |
+|                 | system-specific |                 |                 |
+|                 | properties.     |                 |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p>Proposed properties in &ldquo;range&rdquo;:</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Property        | Description     | Presence        | Example 1       |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| minValue        | A minimum value | Must be present | -7.25           |
+|                 | for numeric     | if applicable.  |                 |
+|                 | data            | Must not be     |                 |
+|                 |                 | present if not  |                 |
+|                 |                 | applicable.     |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| maxValue        | A maximum value | Must be present | 13              |
+|                 | for numeric     | if applicable.  |                 |
+|                 | data            | Must not be     |                 |
+|                 |                 | present if not  |                 |
+|                 |                 | applicable.     |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| rangeValues     | A finite list   | May be present  | [ &ldquo;Sunday&rdquo;,    |
+|                 | of values drawn | if applicable.  | &ldquo;Monday&rdquo;,       |
+|                 | from the        | (If the data    | &ldquo;Tuesday&rdquo;,      |
+|                 | default range   | set would be    | &ldquo;Wednesday&rdquo;,    |
+|                 | of the          | really long, it | &ldquo;Thursday&rdquo;,     |
+|                 | baseDataType.   | might not be    | &ldquo;Friday&rdquo;,       |
+|                 |                 | possible to     | &ldquo;Saturday&rdquo; ]   |
+|                 |                 | include.)       |                 |
+|                 |                 |                 |                 |
+|                 |                 |                 |                 |
+|                 |                 |                 |                 |
+|                 |                 | Must not be     |                 |
+|                 |                 | present if not  |                 |
+|                 |                 | applicable.     |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| rangeDataType   | The name of the | May be present  | &ldquo;DaysOfTheWeek&rdquo; |
+|                 | range           | if applicable.  | ,               |
+|                 | constraint      |                 | &ldquo;dbo.DaysOfTheW |
+|                 | (e.g. a FK      |                 | eek&rdquo;            |
+|                 | table name)     |                 |                 |
+|                 |                 | If applicable   |                 |
+|                 |                 | and rangeValues |                 |
+|                 |                 | is not present, |                 |
+|                 |                 | then this       |                 |
+|                 |                 | property must   |                 |
+|                 |                 | be present.     |                 |
++&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<p><strong>The upload file must be zipped (compressed)</strong>. The zipped file can
+contain multiple JSON files to organize the files.</p>
+<p>For example:</p>
+<p>SAPFileUpload.zip can contain:</p>
+<ul>
+<li>SAP (directory - <strong>optional</strong>)
+<ul>
+<li>HRFields.json</li>
+<li>FinanceFields.json</li>
+<li>LegalFields.json</li>
+</ul>
+</li>
+</ul>
+<p>Or it can contain one file</p>
+<p>SAPFileUpload.zip</p>
+<ul>
+<li>SAP (directory - <strong>optional</strong>)
+<ul>
+<li>Fields.json</li>
+</ul>
+</li>
+</ul>
+<p>To upload field metadata for a System:</p>
+<ol>
+<li>
+<p><a href="Set%20Up%20a%20System.htm">Add a System</a>.</p>
+<p>OR</p>
+<p><a href="Enhanced%20Search.htm">Search for a System and open the detail
+page</a>.</p>
+</li>
+<li>
+<p>Click the drop-down menu for the System.</p>
+<p><img src="Resources/Images/SystemsDropDown.png" alt=""></p>
+</li>
+<li>
+<p>Select <strong>Upload Metadata</strong>.</p>
+</li>
+<li>
+<p>Drag and Drop the JSON file onto the upload modal.</p>
+<p>OR</p>
+<p>Browse for the file.</p>
+</li>
+<li>
+<p>Click <strong>Upload</strong>.</p>
+</li>
+</ol>
+<p><strong>IMPORTANT</strong>: You will receive a message in the
+<a href="Notifications.htm">Notifications</a> panel once the file has been
+processed to indicate success or to inform you of issues with the
+import.</p>
+<p>After you receive a message that the upload succeeded, you can use your
+browser refresh option to update the count in the
+<a href="Set%20Up%20a%20System.htm#Fields">Fields</a> panel to verify the upload.
+Next, the fields can be used to set up Data Sets. Refer to <a href="Set%20Up%20a%20Data%20Set.htm">Set Up a
+Data Set</a>.</p>
+<h2 id="removefieldsremove-fields-from-a-system">[]{#RemoveFields}Remove Fields from a System</h2>
+<p>You can remove specific fields (or a group of fields) from a System if
+you re-import to a System with the import file in which fields that
+<strong>had been previously imported</strong> to that System are not included. The
+fields that you choose to exclude from the newly imported file are
+marked as Removed from System in any <a href="Set%20Up%20a%20Data%20Set.htm">Data
+Set</a> where the fields had been added.</p>
+<p>If a field that was removed from a System is subsequently re-included in
+the import file and imported to the System again it is made &ldquo;active&rdquo;
+again in any data set in which it has been used.</p>
+
+
+    
+    
+          <footer class=" footline" >
+	
+</footer>
+  </div>
+</div>
+
+<div id="navigation">
+<a class="nav nav-prev" href="/entotahugo/data-catalog/set_up_a_data_set/" title="Set Up a Data Set"> <i class="fa fa-chevron-left"></i><label>Set Up a Data Set</label></a>
+    <a class="nav nav-next" href="/entotahugo/sponsors/" title="Sponsors" style="margin-right: 0px;"><label>Sponsors</label><i class="fa fa-chevron-right"></i></a></div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+<script src="/entotahugo/js/clipboard.min.js"></script>
+<script src="/entotahugo/js/featherlight.min.js"></script>
+<script src="/entotahugo/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/entotahugo/js/modernizr.custom.71422.js"></script>
+<script src="/entotahugo/js/docdock.js"></script>
+<script src="/entotahugo/theme-original/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>
