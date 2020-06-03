@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Relationships on Entota Hugo POC</title>
-    <link>https://heathercl.gitlab.io/entotahugo/relationships/</link>
+    <link>https://hcloward.github.io/HCloward.github.io-entota/relationships/</link>
     <description>Recent content in Relationships on Entota Hugo POC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://heathercl.gitlab.io/entotahugo/relationships/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hcloward.github.io/HCloward.github.io-entota/relationships/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Add a Relationship to a Non-Strategy Asset</title>
-      <link>https://heathercl.gitlab.io/entotahugo/relationships/addarelationshiptoanonstrategyasset/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/relationships/addarelationshiptoanonstrategyasset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/relationships/addarelationshiptoanonstrategyasset/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/relationships/addarelationshiptoanonstrategyasset/</guid>
       <description>Non-Strategy assets include terms, rules, policies, data sets and systems.
 To add a relationship to a non-strategy asset:
   On the asset detail page, click a tab for an asset relationship.
@@ -26,30 +26,30 @@ To add a relationship to a non-strategy asset:
     
     <item>
       <title>Add a Relationship to a Strategy Asset</title>
-      <link>https://heathercl.gitlab.io/entotahugo/relationships/addarelationshiptoastrategyasset/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/relationships/addarelationshiptoastrategyasset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/relationships/addarelationshiptoastrategyasset/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/relationships/addarelationshiptoastrategyasset/</guid>
       <description>When working in Strategy, you can only create asset relationships for goals and initiatives, and only to other goals and initiatives. Relationships to other assets (Rules, Policies, Terms, Systems, Data Sets) must be created on those detail pages using the asset relationship tabs. Refer to Add a Relationship to a Non-Strategy Asset for more information.
 Goals-to-goal and initiative-to-initiative relationships can only be added by rolling the program-level asset up to the company-level asset.</description>
     </item>
     
     <item>
       <title>Add a Term-to-Term Relationship</title>
-      <link>https://heathercl.gitlab.io/entotahugo/relationships/addatermtotermrelationship/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/relationships/addatermtotermrelationship/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/relationships/addatermtotermrelationship/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/relationships/addatermtotermrelationship/</guid>
       <description>The following types of term-to-term relationships can be added on the Terms tab of a term detail page:
 NOTE: For example, you can add &amp;ldquo;is related to&amp;rdquo; relationships between the term Customer to terms such as Name, Phone Number, Address, and Telephone Number. Alternatively, you can add an &amp;ldquo;is part of a(n)&amp;rdquo; relationship between Customer and Address, as an Address is part of a customer record. You can also establish a relationship where Customer &amp;quot;has a(n)&amp;quot; Sales Order.</description>
     </item>
     
     <item>
       <title>Deep Guidance™ Inferred Relationships</title>
-      <link>https://heathercl.gitlab.io/entotahugo/relationships/deep_guidance_inferred_relationships/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/relationships/deep_guidance_inferred_relationships/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/relationships/deep_guidance_inferred_relationships/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/relationships/deep_guidance_inferred_relationships/</guid>
       <description>Entota™ can infer a relationship between assets using Deep Guidance™, which examines the language used in describing an asset to determine a relationship. For example, Deep Guidance™ analyzes the Definition of a Term for language that has previously been used in a Rule to create an inferred relationship between the two. The inferred relationship is automatically associated on the detail page for both the Term and Rule.
 The Discover icon in the Relate Assets pane on a detail page indicates assets that are related using Deep Guidance™.</description>
     </item>

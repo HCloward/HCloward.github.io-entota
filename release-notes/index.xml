@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Entota Release Notes on Entota Hugo POC</title>
-    <link>https://heathercl.gitlab.io/entotahugo/release-notes/</link>
+    <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/</link>
     <description>Recent content in Entota Release Notes on Entota Hugo POC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://heathercl.gitlab.io/entotahugo/release-notes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hcloward.github.io/HCloward.github.io-entota/release-notes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>April 2018</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0418/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0418/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0418/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0418/</guid>
       <description>April 2018 April 30, 2018 Bug Fix [IGC-351] - Fixed an issue that caused multiple errors when adding tasks to a published scenario by updating the status of that scenario when changes to roles and tasks are made.
 April 26, 2018 Bug Fixes  [IGC-1178] – Fixed an issue where the horizontal dividing lines in the left panel on asset detail pages were missing. [IGC-1179] – Fixed an issue where suggested terms in all caps were not being truncated in the guidance panel.</description>
     </item>
     
     <item>
       <title>August 2018</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0818/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0818/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0818/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0818/</guid>
       <description>August 2018 August 30, 2018 Enhancement You can view a dashboard with Entota™ centric metrics and information. You must have permissions to the Director persona in Admin to access the dashboard. Refer to Entota™ Dashboard for more information.
 Bug Fix [IGC-1495] — Fixed an issue where when a user navigated away from an asset page without making changes, the user was prompted to save.
 August 24, 2018 Enhancement [IGC-1351] — Removed redundant feature flag gates that inhibited persona-based dashboard from displaying for all tenants.</description>
@@ -33,10 +33,10 @@ August 24, 2018 Enhancement [IGC-1351] — Removed redundant feature flag gates 
     
     <item>
       <title>December 2017</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases1217/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases1217/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases1217/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases1217/</guid>
       <description>December 2017 December 18, 2017 Various fixes and minor improvements.
 December 11, 2017 Various fixes and minor improvements.
 December 04, 2017  Get governance programs up and running quickly through Deep Guidance™ infused with expertise and best practices that focuses teams on creating the highest value assets for governance. Achieve effective governance of data as defined by business users who have the best insights on business strategy versus technology driven approaches.</description>
@@ -44,95 +44,95 @@ December 04, 2017  Get governance programs up and running quickly through Deep G
     
     <item>
       <title>December 2018</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases1218/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases1218/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases1218/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases1218/</guid>
       <description>December 2018 December 20, 2018 Enhancements  Starting with DSP 7.0.2, users can now easily copy DSP page URLs, filtered or with binding criteria, to use as documentation for an asset in IGC. These URLs are copied from any page in the DSP by using the Copy URL to Clipboard option in the DSP Settings menu. The URL takes them to the page where it was generated with the same drill through and the same filters applied, so users can target specific records.</description>
     </item>
     
     <item>
       <title>February 2018</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0218/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0218/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0218/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0218/</guid>
       <description>February 2018 February 22, 2018 Bug Fixes  [IGC-1003] – Fixed an issue where the headings for Start and End Date for Initiatives were not displaying on the detail page and fixed an issue where when selecting values for Start and End Date on an existing initiative the save button was not enabled. [IGC-1096] – Fixed an issue where the &amp;lsquo;No Results&amp;rsquo; and &amp;lsquo;Loading&amp;rsquo; messages were not displaying on the Search Results page when a user performed a search.</description>
     </item>
     
     <item>
       <title>January 2018</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0118/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0118/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0118/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0118/</guid>
       <description>January 2018 January 31, 2018 Bug Fixes  [IGC-887] – Fixed an issue where duplicating a browser tab caused a browser error that prevented a Term page from opening in the new tab by limiting the number of suggested terms to 20 and existing terms to 1000. [IGC-926] – Fixed an issue were when a sponsor contested an asset the color on the “Contested” indicator did not update to gray in the comments panel.</description>
     </item>
     
     <item>
       <title>January 2019</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0119/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0119/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0119/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0119/</guid>
       <description>January 2019 January 31, 2019 Announcing Entota BackOffice Associates is combining the Cloud and On-Premise Platforms into a new software solution called Entota by BackOffice Associates. In your cloud tenant, you will immediately see the new logo and the name Entota replacing all references to IGC and Information Governance Cloud. The existing features and functionality of your tenant will not be affected by this change. Throughout 2019 and beyond we will continue to introduce new features and improved functionality to Entota that will take advantage of the scale and technologies of the cloud, leverage Machine Learning, Artificial Intelligence, Natural Language Processing, and advanced analytics, allowing us to bring new innovative solutions to the challenges of data migration, quality, governance, and management.</description>
     </item>
     
     <item>
       <title>July 2019</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0718/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0718/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0718/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0718/</guid>
       <description>July 2019 July 27, 2018 Enhancement Guidance has been added so that if a user does not have permission to edit an asset, the panel is no longer blank, but tells the user that permission is required. Bug Fixes
  [IGC-1437] – Fixed an issue where a user could not edit a sponsor in IE 11. [IGC-1436] – Fixed an issue where a rule could not be added to a term in IE 11.</description>
     </item>
     
     <item>
       <title>June 2018</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0618/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0618/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0618/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0618/</guid>
       <description>June 2018 June 21, 2018 Enhancement When defining a Policy using the Quick Add model, you can now access a Rich Text Editor instead of a single text field. You can now format the Policy definition and add links to it.
 Bug Fix [IGC-1281] - Fixed an issue where assets could be successfully added with a space in required fields by ensuring that required fields contain text before an asset can be saved.</description>
     </item>
     
     <item>
       <title>March 2018</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0318/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0318/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0318/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0318/</guid>
       <description>March 2018 March 26, 2018 Enhancements  Updated the label for the Field count on the System detail page to indicate “Active Fields.” The Field count only includes active fields. Refer to Set Up a System for more information. Fields can now be deleted from a System. Fields that have been deleted from a System appear as Deprecated on the Fields tab of the Data Set detail page. A filter for Depreciated fields has been added to the Data Set detail page on the Fields Tab.</description>
     </item>
     
     <item>
       <title>May 2018</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0518/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0518/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0518/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0518/</guid>
       <description>May 2018 May 29, 2018 Bug Fix [IGC-1212] – Fixed an issue where users could delete a Vision or Mission by removing the Delete option for those asset types.
 May 22, 2018 Enhancement The Entota™ has been enhanced to localize the date format entered or displayed based on the Locale setting in the user’s account. With this enhancement, for existing users the Locale defaults to English, refer to Add a User to learn how to update the default.</description>
     </item>
     
     <item>
       <title>November 2018</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases1118/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases1118/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases1118/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases1118/</guid>
       <description>November 2018 November 16, 2018 New Feature A new Enhanced Search page has been added to the IGC. The Enhanced Search provides an easy way to find and manage assets using the search bar filter, Jump To&amp;hellip; links, and category filters. Category filters can query an asset’s:
  Asset type Endorsement status Assigned users Sponsors The Enhanced Search provides multiple options for accessing strategy and non-strategy assets, and the category filters can help management-level users evaluate assets and their employees’ progress in managing them.</description>
     </item>
     
     <item>
       <title>October 2018</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases1018/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases1018/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases1018/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases1018/</guid>
       <description>October 2018 October 31, 2018 Enhancement A new Migration dashboard has been added. This dashboard provides visibility into progress and status associated with enterprise Data Migration efforts by giving you access to the most important migration project metrics.
 Using this dashboard you can:
  Understand the current status of migration waves. Identify any waves that are running behind schedule. Ascertain go-live readiness for a wave. Whether you are responsible for one or multiple waves, across a single instance or multiple instances in the DSP®, you can view progress against milestones to assess risk and determine a need for resource adjustment and communicate effectively to all project stakeholders.</description>
@@ -140,10 +140,10 @@ Using this dashboard you can:
     
     <item>
       <title>September 2018</title>
-      <link>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0918/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0918/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/release-notes/entotareleases0918/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/release-notes/entotareleases0918/</guid>
       <description>September 2018 September 28, 2018 Enhancements The field count on the Systems detail page now updates when a file is uploaded. In previous versions, a browser refresh was required to view the updated field count. Deep Guidance for suggested terms has been added to the Name and Description fields for Systems and Data Sets. Bug Fix
 [IGC-1405] — Fixed a performance issue that caused the policy detail page to render slowly in IE 11.</description>
     </item>

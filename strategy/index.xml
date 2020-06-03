@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Strategy on Entota Hugo POC</title>
-    <link>https://heathercl.gitlab.io/entotahugo/strategy/</link>
+    <link>https://hcloward.github.io/HCloward.github.io-entota/strategy/</link>
     <description>Recent content in Strategy on Entota Hugo POC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://heathercl.gitlab.io/entotahugo/strategy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hcloward.github.io/HCloward.github.io-entota/strategy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Vision, Mission, Goals, and Initiatives</title>
-      <link>https://heathercl.gitlab.io/entotahugo/strategy/vision_mission_goals_and_initiatives/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/strategy/vision_mission_goals_and_initiatives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/strategy/vision_mission_goals_and_initiatives/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/strategy/vision_mission_goals_and_initiatives/</guid>
       <description>You can define the strategy for accomplishing your business objective by adding Vision, Mission, Goals, and Initiatives to the strategy. You can add Vison, Mission, Goals and Initiatives at a company and program strategy level.
 Learn about Vision, Mission, Goals, and Initiatives:
  Add a Vision Add a Mission Add Goals Add Initiatives  </description>
@@ -23,10 +23,10 @@ Learn about Vision, Mission, Goals, and Initiatives:
     
     <item>
       <title>Add a Vision</title>
-      <link>https://heathercl.gitlab.io/entotahugo/strategy/add_a_vision/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/strategy/add_a_vision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/strategy/add_a_vision/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/strategy/add_a_vision/</guid>
       <description>A Vision is the result that is accomplished by the Strategy.
 To add a vision:
  Select the Strategy to which you are adding the Vision from the Strategy drop-down. Click the Vision tab. Click the Click Here To Get Started link. Enter the vision Statement. Enter a detailed Description of the Vision. Click Save.  To edit a Vision, click the Vision tab on the home page, and then click the Pencil () icon.</description>
@@ -34,10 +34,10 @@ To add a vision:
     
     <item>
       <title>Add a Mission</title>
-      <link>https://heathercl.gitlab.io/entotahugo/strategy/add_a_mission/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/strategy/add_a_mission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/strategy/add_a_mission/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/strategy/add_a_mission/</guid>
       <description>A Mission is a purpose statement for accomplishing the Vision.
 To add a Mission:
  Select the Strategy to which you are adding the Mission from the Strategy drop-down. Click the Mission tab. Click the Click Here To Get Started link. Enter the mission Statement. Enter a detailed Description of the Mission. Click Save.  To edit a Mission, click the Mission tab on the home page and then click the Pencil () icon.</description>
@@ -45,10 +45,10 @@ To add a Mission:
     
     <item>
       <title>Add Goals</title>
-      <link>https://heathercl.gitlab.io/entotahugo/strategy/add_goals/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/strategy/add_goals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/strategy/add_goals/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/strategy/add_goals/</guid>
       <description>A Goal is a time bound and measurable achievement that is directly tied to and supports the accomplishment of a Mission.
 You can add a company or program level goal. You can roll a program level goal up to a company level goal. All associated program level goals are displayed on company level goals.
 Before you begin this task, make sure you have selected the correct context from the Company and Program strategy level drop-down on the Home page.</description>
@@ -56,10 +56,10 @@ Before you begin this task, make sure you have selected the correct context from
     
     <item>
       <title>Add Initiatives</title>
-      <link>https://heathercl.gitlab.io/entotahugo/strategy/add_initiatives/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/strategy/add_initiatives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/strategy/add_initiatives/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/strategy/add_initiatives/</guid>
       <description>An Initiative defines the plan for how the Goals are going to be achieved. Initiatives are time bound and their achievement is measurable.
 You can add a company or program level initiative. You can roll a program level initiative up to a company level initiative. All associated program level initiatives are displayed on company level initiatives.
 Before you begin this task, make sure you have selected the correct context from the Company and Program strategy level drop-down on the Home page.</description>

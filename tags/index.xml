@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Entota Hugo POC</title>
-    <link>https://heathercl.gitlab.io/entotahugo/tags/</link>
+    <link>https://hcloward.github.io/HCloward.github.io-entota/tags/</link>
     <description>Recent content in Tags on Entota Hugo POC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://heathercl.gitlab.io/entotahugo/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hcloward.github.io/HCloward.github.io-entota/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

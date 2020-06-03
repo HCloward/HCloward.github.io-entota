@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enhanced Search on Entota Hugo POC</title>
-    <link>https://heathercl.gitlab.io/entotahugo/enhanced-search/</link>
+    <link>https://hcloward.github.io/HCloward.github.io-entota/enhanced-search/</link>
     <description>Recent content in Enhanced Search on Entota Hugo POC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://heathercl.gitlab.io/entotahugo/enhanced-search/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hcloward.github.io/HCloward.github.io-entota/enhanced-search/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

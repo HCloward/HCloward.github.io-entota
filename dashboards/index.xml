@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dashboards on Entota Hugo POC</title>
-    <link>https://heathercl.gitlab.io/entotahugo/dashboards/</link>
+    <link>https://hcloward.github.io/HCloward.github.io-entota/dashboards/</link>
     <description>Recent content in Dashboards on Entota Hugo POC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://heathercl.gitlab.io/entotahugo/dashboards/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hcloward.github.io/HCloward.github.io-entota/dashboards/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Migration Dashboard</title>
-      <link>https://heathercl.gitlab.io/entotahugo/dashboards/migration_dashboard/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/dashboards/migration_dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/dashboards/migration_dashboard/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/dashboards/migration_dashboard/</guid>
       <description>The Migration dashboard, available with DSP 7.0.1 and later, provides visibility into progress and status associated with enterprise Data Migration efforts by giving you access to the most important migration project metrics.
 Using this dashboard you can:
  Understand the current status of migration waves Identify any waves that are running behind schedule Ascertain go-live readiness for a wave  Whether you are responsible for one or multiple waves, across a single instance or multiple instances in the DSP, you can view progress against milestones to assess risk, determine a need for resource adjustment and communicate effectively to all project stakeholders.</description>
@@ -23,20 +23,20 @@ Using this dashboard you can:
     
     <item>
       <title>Director Dashboard</title>
-      <link>https://heathercl.gitlab.io/entotahugo/dashboards/director_dashboard/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/dashboards/director_dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/dashboards/director_dashboard/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/dashboards/director_dashboard/</guid>
       <description>You can view a dashboard with Entota™ centric metrics and information. You must have permissions to the Director persona in Admin to access the dashboard. Refer to Add a User for more information. Once you have Persona set to Director, the dashboard is displayed as soon as you log in.
 NOTE: The dashboard is generally updated once daily, but can be updated more frequently. Refer to the date and time stamp in the upper right corner of the dashboard to see when it was last updated.</description>
     </item>
     
     <item>
       <title>Director Dashboard Deep Guidance</title>
-      <link>https://heathercl.gitlab.io/entotahugo/dashboards/director_dashboard_deep_guidancd/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/dashboards/director_dashboard_deep_guidancd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/dashboards/director_dashboard_deep_guidancd/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/dashboards/director_dashboard_deep_guidancd/</guid>
       <description>When you are viewing the dashboard, you can click the Guidance () icon to view assets for which you have responsibility.
 NOTE: You must have the Director Persona set in your user account in Admin to view the dashboard.
 On the Entota™ landing page, you can click the Guidance icon to view:

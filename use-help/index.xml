@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Entota Hugo POC</title>
-    <link>https://heathercl.gitlab.io/entotahugo/use-help/</link>
+    <link>https://hcloward.github.io/HCloward.github.io-entota/use-help/</link>
     <description>Recent content on Entota Hugo POC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://heathercl.gitlab.io/entotahugo/use-help/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hcloward.github.io/HCloward.github.io-entota/use-help/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://heathercl.gitlab.io/entotahugo/use-help/basic_navigation/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/use-help/basic_navigation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/use-help/basic_navigation/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/use-help/basic_navigation/</guid>
       <description>Basic Navigation Access Online Help To access online help, click the Help link in the site&amp;rsquo;s footer. Once the online help opens, a Welcome topic displays. To return to this page at any time in your session, click the Entota™ logo in the top left corner of the page.
 Navigate Help To find a specific topic, use the search bar, otherwise topics that describe tasks that the user performs or that the product performs display in a right side menu.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://heathercl.gitlab.io/entotahugo/use-help/online_help_search_tips/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/use-help/online_help_search_tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/use-help/online_help_search_tips/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/use-help/online_help_search_tips/</guid>
       <description>Online Help Search Tips To search help, enter a search term, and click the Search icon, which is the magnifying glass on the Page toolbar.
 The search results display. The matching results show how many times the term is mentioned. A link to each of the topics containing the search term displays.
 Use quotes around multiple word search terms (for example, &amp;ldquo;data source&amp;rdquo;) to view the topics that contain the exact phrase.</description>
@@ -33,10 +33,10 @@ Use quotes around multiple word search terms (for example, &amp;ldquo;data sourc
     
     <item>
       <title></title>
-      <link>https://heathercl.gitlab.io/entotahugo/use-help/print_feedback_version/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/use-help/print_feedback_version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/use-help/print_feedback_version/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/use-help/print_feedback_version/</guid>
       <description>Print, Remove Highlights, Footer Links and Feedback Print To print a topic, click the Print icon on the toolbar.
 Remove Highlights Click the Remove Highlights button next to the Print icon on the toolbar to remove highlighted search words from a topic&#39;s text.
 Footer Links The following elements are available in the footer of every topic:

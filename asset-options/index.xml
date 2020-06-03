@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asset Options on Entota Hugo POC</title>
-    <link>https://heathercl.gitlab.io/entotahugo/asset-options/</link>
+    <link>https://hcloward.github.io/HCloward.github.io-entota/asset-options/</link>
     <description>Recent content in Asset Options on Entota Hugo POC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://heathercl.gitlab.io/entotahugo/asset-options/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hcloward.github.io/HCloward.github.io-entota/asset-options/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Share URLs for Assets</title>
-      <link>https://heathercl.gitlab.io/entotahugo/asset-options/share_urls_for_assets/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/asset-options/share_urls_for_assets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/asset-options/share_urls_for_assets/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/asset-options/share_urls_for_assets/</guid>
       <description>You can collaborate with other users by sharing the URL for an asset.
 To copy the asset&amp;rsquo;s direct link to share:
  Search for the asset. In the asset&amp;rsquo;s Preview panel, click the Copy direct link to clipboard () icon.  This copies the link to your clipboard. Next, you can paste the link to share, for example in an email.
@@ -24,20 +24,20 @@ To share the URL for an asset from the asset&amp;rsquo;s details page:</descript
     
     <item>
       <title>View Change History for Assets</title>
-      <link>https://heathercl.gitlab.io/entotahugo/asset-options/view_change_history_for_assets/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/asset-options/view_change_history_for_assets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/asset-options/view_change_history_for_assets/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/asset-options/view_change_history_for_assets/</guid>
       <description>You can view changes to an asset including the name of the person who changed the asset along with the date and time of the change. You can view the details for the change to see:
  Location &amp;ndash; The name of field that changed Previous &amp;ndash; The contents of the field before it was changed New &amp;ndash; The new contents of the field  To view the change history for an asset:</description>
     </item>
     
     <item>
       <title>Comment on an Asset</title>
-      <link>https://heathercl.gitlab.io/entotahugo/asset-options/comment_on_an_asset/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/asset-options/comment_on_an_asset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/asset-options/comment_on_an_asset/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/asset-options/comment_on_an_asset/</guid>
       <description>You can comment on assets. Commenting, unless you are commenting about a Contest to an asset, does not change the status of the asset. You can include URL links in your comments.
 To comment on an asset:
   Search for and open the asset.
@@ -48,10 +48,10 @@ NOTE: To edit or delete your comment after it has been added, you can click the 
     
     <item>
       <title>Add Supporting Documentation to Assets</title>
-      <link>https://heathercl.gitlab.io/entotahugo/asset-options/add_supporting_doc/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/asset-options/add_supporting_doc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/asset-options/add_supporting_doc/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/asset-options/add_supporting_doc/</guid>
       <description>You can attach documentation that relates to an asset.
 To add supporting documentation to an asset:
   Search for and open the asset.
@@ -63,10 +63,10 @@ NOTE: Starting with DSP 7.0.2, users can easily copy DSP page URLs, filtered or 
     
     <item>
       <title>Enforcement Profiles</title>
-      <link>https://heathercl.gitlab.io/entotahugo/asset-options/enforcementprofiles/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/asset-options/enforcementprofiles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/asset-options/enforcementprofiles/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/asset-options/enforcementprofiles/</guid>
       <description>Enforcement Profiles document information about the purpose, the implementation, and the technology behind rule enforcement. With this information, business and technical users can easily understand how rules are enforced and the impact rules have on the business. The profiles accommodate different types of rules: rules that are automatically enforced via enforcement technology (for example, the DSP®), rules that are enforced via manual tasks, and rules that are not enforced but require documentation.</description>
     </item>
     

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Administration on Entota Hugo POC</title>
-    <link>https://heathercl.gitlab.io/entotahugo/administration/</link>
+    <link>https://hcloward.github.io/HCloward.github.io-entota/administration/</link>
     <description>Recent content in Administration on Entota Hugo POC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://heathercl.gitlab.io/entotahugo/administration/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hcloward.github.io/HCloward.github.io-entota/administration/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Search Admin</title>
-      <link>https://heathercl.gitlab.io/entotahugo/administration/search_admin/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/administration/search_admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/administration/search_admin/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/administration/search_admin/</guid>
       <description>You can search for a user account in Admin. You can only search within First Name or Last Name. Operators (for example, AND, OR, NOT or AND NOT) and wildcard characters (for example, &amp;ldquo;*&amp;ldquo;or &amp;ldquo;?&amp;quot;) are not allowed in the search.
 You can search by partial words. For example, a search for &amp;ldquo;Jo&amp;rdquo; would return Joe, John and Joseph.
 To search in Admin:
@@ -24,10 +24,10 @@ To search in Admin:
     
     <item>
       <title>Add a User to Entota</title>
-      <link>https://heathercl.gitlab.io/entotahugo/administration/add_a_user_to_entota/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/administration/add_a_user_to_entota/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/administration/add_a_user_to_entota/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/administration/add_a_user_to_entota/</guid>
       <description>You can add a user to Entota™ and assign permissions.
 You can grant a combination of the following permissions to a user depending on the access required.
  ADMIN - Can add and edit user accounts and set user permissions to Platform components. APPROVER - Can be set as an Owner for elements and can approve elements in order to publish them. AUTHOR - Can create child elements - Processes, Scenarios, Roles, Tasks, and assets such as Terms, Rules, etc.</description>
@@ -35,10 +35,10 @@ You can grant a combination of the following permissions to a user depending on 
     
     <item>
       <title>Edit a User Account</title>
-      <link>https://heathercl.gitlab.io/entotahugo/administration/edit_a_user_account/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/administration/edit_a_user_account/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/administration/edit_a_user_account/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/administration/edit_a_user_account/</guid>
       <description>You can edit a user account if you have been granted Admin level permission in the Platform component.
 To edit a user account:
   Click the Applications icon.
@@ -50,20 +50,20 @@ NOTE: Or, leave en (English) as the default. The Locale sets the date format for
     
     <item>
       <title>Update My Profile</title>
-      <link>https://heathercl.gitlab.io/entotahugo/administration/update_my_profile/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/administration/update_my_profile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/administration/update_my_profile/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/administration/update_my_profile/</guid>
       <description>Once your account has been added by an administrator, you can update your profile to change Locale, which controls how dates are formatted.
 In addition, you can opt in or opt out of the Optional Information tracking as described in the BackOffice Associates Privacy Policy. Only the user to which the account applies can change this setting. Administrators cannot update this setting for users. You can access the policy at any time by clicking the Privacy Policy link in the Entota™ footer.</description>
     </item>
     
     <item>
       <title>Entota WebSocket Firewall Requirements</title>
-      <link>https://heathercl.gitlab.io/entotahugo/administration/entota_websocket_firewall_requirements/</link>
+      <link>https://hcloward.github.io/HCloward.github.io-entota/administration/entota_websocket_firewall_requirements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://heathercl.gitlab.io/entotahugo/administration/entota_websocket_firewall_requirements/</guid>
+      <guid>https://hcloward.github.io/HCloward.github.io-entota/administration/entota_websocket_firewall_requirements/</guid>
       <description>Entota uses the WebSocket protocol for a few different features, mainly centered around the deep guidance module. The WebSocket protocol has some required HTTP headers that aren&amp;rsquo;t commonly used and tend to be stripped out by corporate firewall software. Below is an example of a BOA app client initiated WebSocket request to BOA cloud, and the response back to the client. All of the headers outlined in this example are required.</description>
     </item>
     
